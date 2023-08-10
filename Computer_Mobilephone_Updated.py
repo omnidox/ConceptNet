@@ -38,11 +38,13 @@ def bfs_modified_with_pathwise_visited(start, max_degree=2):
     path_counter = 0
     
     # Introducing the processed_edges set
-    processed_edges = set()
+    
 
     while queue:
         node, path, pathwise_visited, first_edge_weight = queue.popleft()
 
+        processed_edges = set()
+        
         degree_counter = len(path)
 
         if degree_counter > max_degree:
