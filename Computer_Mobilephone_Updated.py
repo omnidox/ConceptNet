@@ -120,7 +120,7 @@ def main():
         for obj, obj_paths in location_paths.items():
             if obj in not_found_objects:
                 not_found_objects.remove(obj)
-            all_paths[f"{location}_{obj}"] = obj_paths
+            all_paths[f"{location}:{obj}"] = obj_paths
 
     output_file = "paths_modified.json"
     if os.path.exists(output_file):
