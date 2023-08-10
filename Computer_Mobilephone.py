@@ -59,8 +59,8 @@ def bfs_modified_with_pathwise_visited(start, max_degree=2):
                     continue
                 relation = edge["rel"]["label"]
                 
-                start_label = edge["start"]["label"]
-                end_label = edge["end"]["label"]
+                start_label = edge["start"]["@id"].replace("/c/en/", "")
+                end_label = edge["end"]["@id"].replace("/c/en/", "")
 
                 if relation == "AtLocation" and start_label != node and start_label not in pathwise_visited:
                     next_node = start_label
