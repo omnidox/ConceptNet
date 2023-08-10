@@ -6,7 +6,12 @@ with open('paths_modified.json', 'r') as file:
 
 # Iterate through the data and print paths
 for key, paths_list in data.items():
-    location, object_ = key.split('_', 1)   # Split the key to get the location and the object
+    try:
+        location, object_ = key.split(':')
+    except ValueError:
+        print(f"Error: Expected a single colon in the key '{key}' for splitting.")
+        location, object_ = None, None  # Or any default values you'd like to assign
+
     print(f"\nPaths from {location} to {object_}:")
     
     for path, path_weight in paths_list:

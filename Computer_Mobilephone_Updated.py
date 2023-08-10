@@ -109,28 +109,36 @@ def bfs_modified_with_pathwise_visited(start, max_degree=2):
 
     return paths
 
+
+def save_data(all_paths, not_found_objects):
+    output_file = "paths_modified.json"
+    if os.path.exists(output_file):
+        print(f"Warning: {output_file} already exists. Data will be overwritten.")
+    with open(output_file, "w") as f:
+        json.dump(all_paths, f)
+    print(f"Data saved to {output_file}")
+    if not_found_objects:
+        print(f"Objects not found: {', '.join(not_found_objects)}")
+
+
 # Update the main function to call the new BFS function
 def main():
     all_paths = {}
     not_found_objects = set(OBJECTS)
 
-    for location in LOCATIONS:
-        location_paths = bfs_modified_with_pathwise_visited(location)
-        for obj, obj_paths in location_paths.items():
-            if obj in not_found_objects:
-                not_found_objects.remove(obj)
-            all_paths[f"{location}_{obj}"] = obj_paths
+    try:
+        for location in LOCATIONS:
+            location_paths = bfs_modified_with_pathwise_visited(location)
+            for obj, obj_paths in location_paths.items():
+                if obj in not_found_objects:
+                    not_found_objects.remove(obj)
+                all_paths[f"{location}:{obj}"] = obj_paths
+    except KeyboardInterrupt:
+        print("\\nUser interrupted the process. Saving the data...")
+        save_data(all_paths, not_found_objects)
+        exit()
 
-    output_file = "paths_modified.json"
-    if os.path.exists(output_file):
-        print(f"Warning: {output_file} already exists. Data will be overwritten.")
-
-    with open(output_file, "w") as f:
-        json.dump(all_paths, f)
-
-    print(f"Data saved to {output_file}")
-    if not_found_objects:
-        print(f"Objects not found: {', '.join(not_found_objects)}")
+    save_data(all_paths, not_found_objects)
 
 # We can't execute the main_modified function here since it relies on external API calls and other constants defined in the original code.
 # However, we've made the necessary modifications to the BFS function.
