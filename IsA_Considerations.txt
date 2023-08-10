@@ -1,0 +1,6 @@
+Kitchen	Office	child's_bedroom	Living Room	Bedroom	Dining Room	Pantry	Garden	 Laundry Room
+
+
+Fruit
+Vegetebale
+Clothing
