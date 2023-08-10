@@ -24,6 +24,7 @@ def fetch_related_data(node, rel_type):
         print(f"Error fetching data for node {node} and relation {rel_type}: {e}")
         return {"edges": []}
 
+
 def bfs_modified_with_pathwise_visited(start, max_degree=2):
     """Modified BFS function with tracking, progress updates, and timer."""
     
@@ -35,6 +36,9 @@ def bfs_modified_with_pathwise_visited(start, max_degree=2):
     paths = defaultdict(list)
     global_visited = set([start])
     path_counter = 0
+    
+    # Introducing the processed_edges set
+    processed_edges = set()
 
     while queue:
         node, path, pathwise_visited, first_edge_weight = queue.popleft()
@@ -50,6 +54,15 @@ def bfs_modified_with_pathwise_visited(start, max_degree=2):
             data = fetch_related_data(node, rel_type)
 
             for edge in data["edges"]:
+                
+                # Checking if the edge has already been processed
+                edge_tuple = (edge["start"]["@id"], edge["end"]["@id"], edge["rel"]["label"])
+                if edge_tuple in processed_edges:
+                    continue
+                
+                # Adding the edge to the processed_edges set
+                processed_edges.add(edge_tuple)
+                
                 if edge["start"]["language"] != "en" or edge["end"]["language"] != "en":
                     continue
 
