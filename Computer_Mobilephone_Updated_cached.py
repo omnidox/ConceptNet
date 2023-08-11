@@ -14,6 +14,7 @@ API_ENDPOINT = "http://127.0.0.1:8084/query"
 
 path_cache = defaultdict(list)
 
+start_time = time.time()  # Record the start time
 
 def fetch_related_data(node, rel_type):
     """Fetch related data for a given node and relationship type from the API."""
@@ -31,7 +32,7 @@ def fetch_related_data(node, rel_type):
 def bfs_with_caching(start, max_degree=2):
     """BFS function with path caching."""
     
-    start_time = time.time()  # Record the start time
+    # start_time = time.time()  # Record the start time
     
     # Initial queue with (node, path, visited set for the path, and weight of the first edge)
     queue = deque([(start, [], set([start]), None)])
@@ -54,6 +55,7 @@ def bfs_with_caching(start, max_degree=2):
                 for cached_path, cached_weight in path_cache[node]:
                     if not any(n[0] for n in cached_path if n[0] in pathwise_visited):
                         # If the cached path doesn't introduce a cycle
+                        print(f"Found a cached path for {node}!")
                         paths[node].append((path + cached_path, cached_weight))
                         continue
 
@@ -150,6 +152,9 @@ def main():
     print(f"Data saved to {output_file}")
     if not_found_objects:
         print(f"Objects not found: {', '.join(not_found_objects)}")
+
+    elapsed_time = (time.time() - start_time)/60
+    print(f"Elapsed time: {elapsed_time:.2f} minutes...")
 
 # We can't execute the main_modified function here since it relies on external API calls and other constants defined in the original code.
 # However, we've made the necessary modifications to the BFS function.

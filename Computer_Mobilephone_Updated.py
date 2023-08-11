@@ -12,6 +12,8 @@ LOCATIONS = ['house']
 
 API_ENDPOINT = "http://127.0.0.1:8084/query"
 
+start_time = time.time()  # Record the start time
+
 def fetch_related_data(node, rel_type):
     """Fetch related data for a given node and relationship type from the API."""
     url = f"{API_ENDPOINT}?node=/c/en/{node}&rel=/r/{rel_type}&limit=1000"
@@ -28,7 +30,7 @@ def fetch_related_data(node, rel_type):
 def bfs_modified_with_pathwise_visited(start, max_degree=2):
     """Modified BFS function with tracking, progress updates, and timer."""
     
-    start_time = time.time()  # Record the start time
+    # start_time = time.time()  # Record the start time
     
     # Initial queue with (node, path, visited set for the path, and weight of the first edge)
     queue = deque([(start, [], set([start]), None)])
@@ -144,6 +146,9 @@ def main():
     print(f"Data saved to {output_file}")
     if not_found_objects:
         print(f"Objects not found: {', '.join(not_found_objects)}")
+
+    elapsed_time = (time.time() - start_time)/60
+    print(f"Elapsed time: {elapsed_time:.2f} minutes...")
 
 # We can't execute the main_modified function here since it relies on external API calls and other constants defined in the original code.
 # However, we've made the necessary modifications to the BFS function.
