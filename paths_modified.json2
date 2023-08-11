@@ -1,1 +1,0 @@
-{"house:mobile_phone": [[[["house", "AtLocation", 8.0], ["computer", "IsA", 1.0]], 8.0], [[["house", "AtLocation", 2.0], ["phone", "IsA", 1.0]], 2.0]], "house:calculator": [[[["house", "AtLocation", 8.0], ["computer", "IsA", 1.0]], 8.0]]}
