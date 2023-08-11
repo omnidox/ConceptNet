@@ -14,7 +14,24 @@ for key, paths_list in data.items():
 
     print(f"\nPaths from {location} to {object_}:")
     
+for key, paths_list in data.items():
+    try:
+        location, object_ = key.split(':')
+    except ValueError:
+        print(f"Error: Expected a single colon in the key '{key}' for splitting.")
+        location, object_ = None, None  # Or any default values you'd like to assign
+
+    print(f"\nPaths from {location} to {object_}:")
+    
     for path, path_weight in paths_list:
-        readable_path = " -> ".join([edge[0] + " (" + edge[1] + ")" for edge in path])
-        readable_path += " -> " + object_  # Append the object to the end
-        print(f"{readable_path} | Weight: {path_weight:.2f}")
+        readable_path_elements = []
+        for edge in path:
+            if edge[1] in ['IsA', 'AtLocation']:
+                arrow = " <- "
+            else:
+                arrow = " -> "
+            
+            readable_path_elements.append(f"{edge[0]} ({edge[1]} | Weight: {edge[2]:.2f}){arrow}")
+
+        readable_path = ''.join(readable_path_elements) + object_
+        print(f"{readable_path} | Total Path Weight: {path_weight:.2f}")

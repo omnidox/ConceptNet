@@ -43,7 +43,7 @@ def bfs_modified_with_pathwise_visited(start, max_degree=2):
         while queue:
             node, path, pathwise_visited, first_edge_weight = queue.popleft()
 
-            processed_edges = set()
+            # processed_edges = set()
             
             degree_counter = len(path)
 
@@ -57,35 +57,43 @@ def bfs_modified_with_pathwise_visited(start, max_degree=2):
 
                 for edge in data["edges"]:
                     
-                    # Checking if the edge has already been processed
-                    edge_tuple = (edge["start"]["@id"], edge["end"]["@id"], edge["rel"]["label"])
-                    if edge_tuple in processed_edges:
-                        continue
-                    
-                    # Adding the edge to the processed_edges set
-                    processed_edges.add(edge_tuple)
-                    
                     if edge["start"]["language"] != "en" or edge["end"]["language"] != "en":
                         continue
-
+                
                     next_node = None
                     weight = edge["weight"]
                     if weight < 1:
                         continue
                     relation = edge["rel"]["label"]
                     
+                    
                     start_label = edge["start"]["@id"].replace("/c/en/", "")
                     end_label = edge["end"]["@id"].replace("/c/en/", "")
+
+
+                    if start_label != node and end_label != node:
+                        continue
 
                     if relation == "AtLocation" and start_label != node and start_label not in pathwise_visited:
                         next_node = start_label
                     elif relation == "UsedFor" and end_label != node and end_label not in pathwise_visited:
                         next_node = end_label
-                    elif relation in ["RelatedTo", "Synonym"]:
+
+
+                    elif relation == "Synonym":
                             if start_label != node and start_label not in pathwise_visited:
                                 next_node = start_label
                             elif end_label != node and end_label not in pathwise_visited:
-                                next_node = end_label                    
+                                next_node = end_label 
+
+                    elif relation == "RelatedTo" and weight > 1.5:
+                            print (weight)
+                            if start_label != node and start_label not in pathwise_visited:
+                                next_node = start_label
+                            elif end_label != node and end_label not in pathwise_visited:
+                                next_node = end_label    
+
+
                     elif relation == "IsA" and start_label != node and start_label not in pathwise_visited:
                         next_node = start_label
 
@@ -126,7 +134,7 @@ def main():
                 not_found_objects.remove(obj)
             all_paths[f"{location}:{obj}"] = obj_paths
 
-    output_file = "paths_modified.json"
+    output_file = "paths_modified.json2"
     if os.path.exists(output_file):
         print(f"Warning: {output_file} already exists. Data will be overwritten.")
 
