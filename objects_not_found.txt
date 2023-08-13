@@ -1,0 +1,4 @@
+Objects not found: computer_mouse, artichoke, muffin, tie, camera, chopsticks, teddy_bear, balloon, remote_control, flying_disc, pencil_case, adhesive_tape, shorts, drinking_straw, pretzel, roller_skates, belt, broccoli, oyster, tablet_computer, popcorn, plastic_bag, swimwear
+
+
+chopsticks, drinking_straw, broccoli, computer_mouse, roller_skates, teddy_bear, shorts, artichoke, pretzel, flying_disc, pencil_case, belt, tablet_computer, swimwear, popcorn, remote_control, muffin, plastic_bag

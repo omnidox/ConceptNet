@@ -14,14 +14,28 @@ API_ENDPOINT = "http://127.0.0.1:8084/query"
 
 start_time = time.time()  # Record the start time
 
+node_data_cache2 = {}
+
+
 def fetch_related_data(node, rel_type):
-    """Fetch related data for a given node and relationship type from the API."""
-    url = f"{API_ENDPOINT}?node=/c/en/{node}&rel=/r/{rel_type}&limit=1000"
+    """Fetch related data for a given node and relationship type from the API, with caching."""
+    # Check if data for the node is present in cache
+    if node in node_data_cache2 and rel_type in node_data_cache2[node]:
+        # print(f"Cache hit for node {node} and relation {rel_type}")
+        return node_data_cache2[node][rel_type]
     
+    # If not present in cache, make the API call
+    url = f"{API_ENDPOINT}?node=/c/en/{node}&rel=/r/{rel_type}&limit=1000"
     try:
         response = requests.get(url)
         response.raise_for_status()
-        return response.json()
+        
+        # Cache the result
+        if node not in node_data_cache2:
+            node_data_cache2[node] = {}
+        node_data_cache2[node][rel_type] = response.json()
+        
+        return node_data_cache2[node][rel_type]
     except requests.RequestException as e:
         print(f"Error fetching data for node {node} and relation {rel_type}: {e}")
         return {"edges": []}
