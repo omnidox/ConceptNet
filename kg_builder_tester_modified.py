@@ -50,7 +50,7 @@ def fetch_related_data(node, rel_type):
         return {"edges": []}
 
 
-def bfs_modified_with_pathwise_visited(start, max_degree=4):
+def bfs_modified_with_pathwise_visited(start, max_degree=3):
     """Modified BFS function with tracking, progress updates, and timer."""
     
     # start_time = time.time()  # Record the start time
@@ -75,7 +75,7 @@ def bfs_modified_with_pathwise_visited(start, max_degree=4):
             if degree_counter > max_degree:
                 continue
 
-            rel_types = ["AtLocation", "UsedFor", "Synonym"] if degree_counter == 0 else ["AtLocation", "UsedFor", "RelatedTo", "Synonym", "IsA"]
+            rel_types = ["AtLocation", "UsedFor", "Synonym", "IsA"] if degree_counter == 0 else ["AtLocation", "UsedFor", "RelatedTo", "Synonym", "IsA"]
 
             for rel_type in rel_types:
                 data = fetch_related_data(node, rel_type)
@@ -159,7 +159,7 @@ def main():
                 not_found_objects.remove(obj)
             all_paths[f"{location}:{obj}"] = obj_paths
 
-    output_file = "paths_modified_3.json"
+    output_file = "paths_modified_4.json"
     if os.path.exists(output_file):
         print(f"Warning: {output_file} already exists. Data will be overwritten.")
 
