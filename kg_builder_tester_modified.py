@@ -23,27 +23,38 @@ API_ENDPOINT = "http://127.0.0.1:8084/query"
 
 start_time = time.time()  # Record the start time
 
+CACHE_FILE = 'node_data_cache2.json'
 node_data_cache2 = {}
 
+def save_cache_to_file():
+    with open(CACHE_FILE, 'w') as f:
+        json.dump(node_data_cache2, f)
+
+def load_cache_from_file():
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, 'r') as f:
+            return json.load(f)
+    return {}
+
+node_data_cache2 = load_cache_from_file()
 
 def fetch_related_data(node, rel_type):
     """Fetch related data for a given node and relationship type from the API, with caching."""
     # Check if data for the node is present in cache
     if node in node_data_cache2 and rel_type in node_data_cache2[node]:
-        # print(f"Cache hit for node {node} and relation {rel_type}")
         return node_data_cache2[node][rel_type]
-    
+
     # If not present in cache, make the API call
     url = f"{API_ENDPOINT}?node=/c/en/{node}&rel=/r/{rel_type}&limit=1000"
     try:
         response = requests.get(url)
         response.raise_for_status()
-        
+
         # Cache the result
         if node not in node_data_cache2:
             node_data_cache2[node] = {}
         node_data_cache2[node][rel_type] = response.json()
-        
+
         return node_data_cache2[node][rel_type]
     except requests.RequestException as e:
         print(f"Error fetching data for node {node} and relation {rel_type}: {e}")
@@ -171,6 +182,8 @@ def main():
     print(f"Data saved to {output_file}")
     if not_found_objects:
         print(f"Objects not found: {', '.join(not_found_objects)}")
+
+    save_cache_to_file()
 
     elapsed_time = (time.time() - start_time)/60
     print(f"Elapsed time: {elapsed_time:.2f} minutes...")
