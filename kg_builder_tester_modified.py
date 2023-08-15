@@ -129,7 +129,9 @@ def bfs_modified_with_pathwise_visited(start, max_degree=3):
                         new_path = path + [(node, relation, weight)]
                         current_first_edge_weight = first_edge_weight if first_edge_weight is not None else weight
                         queue.append((next_node, new_path, new_visited, current_first_edge_weight))
-                        if next_node in OBJECTS:
+                        modified_next_node = next_node.split('/')[0]
+
+                        if modified_next_node in OBJECTS:
                             path_counter += 1
                             paths[next_node].append((new_path, current_first_edge_weight))
                             if path_counter % 5 == 0:

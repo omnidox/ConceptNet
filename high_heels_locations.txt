@@ -1,0 +1,38 @@
+
+Locations for high_heels:
+kitchen (AtLocation | Weight: 6.93) <- knife (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- knife (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- knife (RelatedTo | Weight: 1.00) -> dagger (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 6.93 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 6.93) <- knife (RelatedTo | Weight: 1.00) -> dagger (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 6.93 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- knife (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- knife (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.09) -> knife (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.09) -> knife (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- fork (RelatedTo | Weight: 1.00) -> knife (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- fork (RelatedTo | Weight: 1.00) -> knife (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 2.00) <- shoes (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 1.00) <- knife (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 1.00) <- knife (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 7.48) <- shoe (RelatedTo | Weight: 1.00) -> cuban_heel/n (RelatedTo | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 7.48) <- shoe (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 4.00) <- shoes (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 1.00) <- boots (RelatedTo | Weight: 1.00) -> cuban_heel/n (RelatedTo | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 2.00) <- shoes (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 4.00 | Degree of Separation: 4
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 1.00) <- knife (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 4.00 | Degree of Separation: 4
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 1.00) <- knife (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 4.00 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 4.47) <- knife (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 4.47) <- knife (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 1.00) <- pantyhose (RelatedTo | Weight: 1.00) -> cuban_heel/n (RelatedTo | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+office (AtLocation | Weight: 1.00) <- feet (AtLocation | Weight: 1.00) <- shoes (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+office (AtLocation | Weight: 1.00) <- feet (RelatedTo | Weight: 4.29) -> shoes (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+office (AtLocation | Weight: 1.00) <- feet (RelatedTo | Weight: 3.91) -> shoe (RelatedTo | Weight: 1.00) -> cuban_heel/n (RelatedTo | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+office (AtLocation | Weight: 1.00) <- feet (RelatedTo | Weight: 3.91) -> shoe (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+living_room (AtLocation | Weight: 1.00) <- rug (AtLocation | Weight: 1.00) <- shoes (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+bedroom (AtLocation | Weight: 1.00) <- rug (AtLocation | Weight: 1.00) <- shoes (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+bedroom (AtLocation | Weight: 1.00) <- desk (AtLocation | Weight: 1.00) <- shoes (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+bedroom (AtLocation | Weight: 1.00) <- table (AtLocation | Weight: 2.00) <- shoes (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+bedroom (AtLocation | Weight: 1.00) <- table (AtLocation | Weight: 1.00) <- knife (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+bedroom (AtLocation | Weight: 1.00) <- table (AtLocation | Weight: 1.00) <- knife (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+bedroom (AtLocation | Weight: 1.00) <- house (AtLocation | Weight: 1.00) <- shoe (RelatedTo | Weight: 1.00) -> cuban_heel/n (RelatedTo | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+bedroom (AtLocation | Weight: 1.00) <- house (AtLocation | Weight: 1.00) <- shoe (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4
+pantry (Synonym | Weight: 1.00) -> cupboard/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> intend (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 1.00 | Degree of Separation: 4

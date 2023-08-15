@@ -1,0 +1,939 @@
+
+Locations for knife:
+kitchen (AtLocation | Weight: 6.93) <- knife | Total Weight: 6.93 | Degree of Separation: 1
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- knife | Total Weight: 5.29 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.09) -> knife | Total Weight: 5.29 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- fork (RelatedTo | Weight: 1.00) -> knife | Total Weight: 5.29 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 1.00) <- knife | Total Weight: 5.29 | Degree of Separation: 2
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 1.00) <- knife | Total Weight: 4.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 4.47) <- knife | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- table (AtLocation | Weight: 1.00) <- knife | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 4.23) -> table (AtLocation | Weight: 1.00) <- knife | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 3.20) -> table (AtLocation | Weight: 1.00) <- knife | Total Weight: 8.49 | Degree of Separation: 3
+
+Locations for potato:
+kitchen (AtLocation | Weight: 6.93) <- potato | Total Weight: 6.93 | Degree of Separation: 1
+pantry (AtLocation | Weight: 6.63) <- potato | Total Weight: 6.63 | Degree of Separation: 1
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- potato | Total Weight: 7.21 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- potato | Total Weight: 7.21 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 6.93) <- sink (AtLocation | Weight: 1.00) <- potato | Total Weight: 6.93 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- potato | Total Weight: 5.29 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 4.47) <- pantry (AtLocation | Weight: 6.63) <- potato | Total Weight: 4.47 | Degree of Separation: 2
+pantry (AtLocation | Weight: 4.00) <- food (AtLocation | Weight: 1.00) <- potato | Total Weight: 4.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- potato | Total Weight: 4.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 2.83) <- pan (AtLocation | Weight: 1.00) <- potato | Total Weight: 2.83 | Degree of Separation: 2
+
+Locations for grape:
+kitchen (AtLocation | Weight: 4.90) <- grape | Total Weight: 4.90 | Degree of Separation: 1
+garden (AtLocation | Weight: 2.00) <- grape | Total Weight: 2.00 | Degree of Separation: 1
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- grape | Total Weight: 7.21 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- grape | Total Weight: 5.29 | Degree of Separation: 2
+pantry (AtLocation | Weight: 4.00) <- food (AtLocation | Weight: 1.00) <- grape | Total Weight: 4.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 2.83) <- fridge (AtLocation | Weight: 2.00) <- grape | Total Weight: 2.83 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- picnic_basket (AtLocation | Weight: 1.00) <- grape | Total Weight: 1.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 3.26) -> grape | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 10.12) -> plate (AtLocation | Weight: 1.00) <- grape | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 5.47) -> farm (AtLocation | Weight: 1.00) <- grape | Total Weight: 7.21 | Degree of Separation: 3
+
+Locations for candle:
+kitchen (AtLocation | Weight: 2.00) <- candle | Total Weight: 2.00 | Degree of Separation: 1
+bedroom (AtLocation | Weight: 1.00) <- candle | Total Weight: 1.00 | Degree of Separation: 1
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 3.46) <- candle | Total Weight: 5.29 | Degree of Separation: 2
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 3.46) <- candle | Total Weight: 4.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 1.00) <- candle | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- table (AtLocation | Weight: 3.46) <- candle | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- shelf (AtLocation | Weight: 1.00) <- candle | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 4.23) -> table (AtLocation | Weight: 3.46) <- candle | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 3.20) -> table (AtLocation | Weight: 3.46) <- candle | Total Weight: 8.49 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 7.75) <- dresser (AtLocation | Weight: 2.00) <- drawer (AtLocation | Weight: 1.00) <- candle | Total Weight: 7.75 | Degree of Separation: 3
+
+Locations for saucer:
+kitchen (AtLocation | Weight: 1.00) <- saucer | Total Weight: 1.00 | Degree of Separation: 1
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 5.35) -> saucer | Total Weight: 5.29 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.33) -> saucer | Total Weight: 5.29 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 3.46) <- dish (IsA | Weight: 1.00) <- saucer | Total Weight: 3.46 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 2.00) <- cup (RelatedTo | Weight: 2.27) -> saucer | Total Weight: 2.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- dish (IsA | Weight: 1.00) <- saucer | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 10.12) -> plate (RelatedTo | Weight: 5.35) -> saucer | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 10.12) -> plate (RelatedTo | Weight: 1.33) -> saucer | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- sink (AtLocation | Weight: 1.00) <- cup (RelatedTo | Weight: 2.27) -> saucer | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- sink (AtLocation | Weight: 1.00) <- plate (RelatedTo | Weight: 5.35) -> saucer | Total Weight: 6.93 | Degree of Separation: 3
+
+Locations for cake:
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 10.67) -> cake | Total Weight: 7.21 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- cake | Total Weight: 5.29 | Degree of Separation: 2
+pantry (AtLocation | Weight: 4.00) <- food (RelatedTo | Weight: 10.67) -> cake | Total Weight: 4.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 3.46) <- dish (RelatedTo | Weight: 1.03) -> cake | Total Weight: 3.46 | Degree of Separation: 2
+pantry (AtLocation | Weight: 2.83) <- flour (RelatedTo | Weight: 3.75) -> cake | Total Weight: 2.83 | Degree of Separation: 2
+pantry (AtLocation | Weight: 2.00) <- bread (RelatedTo | Weight: 4.01) -> cake | Total Weight: 2.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- sugar (RelatedTo | Weight: 2.46) -> cake | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- pie (RelatedTo | Weight: 4.56) -> cake | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- flour (RelatedTo | Weight: 3.75) -> cake | Total Weight: 1.00 | Degree of Separation: 2
+dining_room (UsedFor | Weight: 1.00) -> eat (RelatedTo | Weight: 1.07) -> cake | Total Weight: 1.00 | Degree of Separation: 2
+
+Locations for apple:
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 2.32) -> apple | Total Weight: 7.21 | Degree of Separation: 2
+office (AtLocation | Weight: 4.90) <- computer (RelatedTo | Weight: 4.16) -> apple | Total Weight: 4.90 | Degree of Separation: 2
+pantry (AtLocation | Weight: 4.00) <- food (RelatedTo | Weight: 2.32) -> apple | Total Weight: 4.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 2.83) <- fridge (AtLocation | Weight: 1.00) <- apple | Total Weight: 2.83 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- pie (RelatedTo | Weight: 3.60) -> apple | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- house (AtLocation | Weight: 1.00) <- apple | Total Weight: 1.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 12.81) -> apple | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 10.39) <- computers (RelatedTo | Weight: 1.00) -> macolyte/n (RelatedTo | Weight: 1.00) -> apple | Total Weight: 10.39 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- refrigerator (AtLocation | Weight: 1.00) <- apple | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.59) -> refrigerator (AtLocation | Weight: 1.00) <- apple | Total Weight: 7.21 | Degree of Separation: 3
+
+Locations for cheese:
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 6.32) <- cheese | Total Weight: 7.21 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 2.00) <- cheese | Total Weight: 5.29 | Degree of Separation: 2
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 6.32) <- cheese | Total Weight: 4.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 2.83) <- fridge (AtLocation | Weight: 2.83) <- cheese | Total Weight: 2.83 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- milk (RelatedTo | Weight: 1.41) -> cheese | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- refrigerator (AtLocation | Weight: 4.90) <- cheese | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 10.12) -> plate (AtLocation | Weight: 2.00) <- cheese | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 3.09) -> market (AtLocation | Weight: 3.46) <- cheese | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.59) -> refrigerator (AtLocation | Weight: 4.90) <- cheese | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.47) -> milk (RelatedTo | Weight: 1.41) -> cheese | Total Weight: 7.21 | Degree of Separation: 3
+
+Locations for orange:
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- orange | Total Weight: 7.21 | Degree of Separation: 2
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- orange | Total Weight: 4.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 3.00) -> orange | Total Weight: 1.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 1.00) <- orange | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 2.32) -> apple (RelatedTo | Weight: 2.57) -> orange | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> fairy_butter/n (RelatedTo | Weight: 1.00) -> orange | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- potato (RelatedTo | Weight: 1.00) -> yam/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> orange | Total Weight: 6.93 | Degree of Separation: 3
+pantry (AtLocation | Weight: 6.63) <- potato (RelatedTo | Weight: 1.00) -> yam/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> orange | Total Weight: 6.63 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 3.46) <- food (IsA | Weight: 1.00) <- orange | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 3.00) -> orange | Total Weight: 5.29 | Degree of Separation: 3
+
+Locations for banana:
+pantry (AtLocation | Weight: 1.00) <- banana | Total Weight: 1.00 | Degree of Separation: 1
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- banana | Total Weight: 7.21 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 4.47) <- pantry (AtLocation | Weight: 1.00) <- banana | Total Weight: 4.47 | Degree of Separation: 2
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- banana | Total Weight: 4.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 1.25) -> banana | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> lemang/n (RelatedTo | Weight: 1.00) -> banana | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 3.46) <- food (IsA | Weight: 1.00) <- banana | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 1.25) -> banana | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 10.12) -> food (IsA | Weight: 1.00) <- banana | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> dining_leaf/n (RelatedTo | Weight: 1.00) -> banana | Total Weight: 5.29 | Degree of Separation: 3
+
+Locations for wine:
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- wine | Total Weight: 7.21 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 4.90) <- grape (RelatedTo | Weight: 5.61) -> wine | Total Weight: 4.90 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 4.90) <- grape (RelatedTo | Weight: 2.55) -> wine | Total Weight: 4.90 | Degree of Separation: 2
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- wine | Total Weight: 4.00 | Degree of Separation: 2
+garden (AtLocation | Weight: 2.00) <- grape (RelatedTo | Weight: 5.61) -> wine | Total Weight: 2.00 | Degree of Separation: 2
+garden (AtLocation | Weight: 2.00) <- grape (RelatedTo | Weight: 2.55) -> wine | Total Weight: 2.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- grape (RelatedTo | Weight: 5.61) -> wine | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- grape (RelatedTo | Weight: 2.55) -> wine | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 3.47) -> drink (RelatedTo | Weight: 5.74) -> wine | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> brasserie/n (RelatedTo | Weight: 1.00) -> wine | Total Weight: 7.21 | Degree of Separation: 3
+
+Locations for bowl:
+kitchen (AtLocation | Weight: 6.93) <- sink (AtLocation | Weight: 1.00) <- bowl | Total Weight: 6.93 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 5.64) -> bowl | Total Weight: 5.29 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 1.00) <- bowl | Total Weight: 5.29 | Degree of Separation: 2
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 1.00) <- bowl | Total Weight: 4.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 3.46) <- dish (RelatedTo | Weight: 1.44) -> bowl | Total Weight: 3.46 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 2.00) <- dishwasher (AtLocation | Weight: 1.00) <- bowl | Total Weight: 2.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- table (AtLocation | Weight: 1.00) <- bowl | Total Weight: 1.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- cupboard (AtLocation | Weight: 7.21) <- bowl | Total Weight: 1.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- dish (RelatedTo | Weight: 1.44) -> bowl | Total Weight: 1.00 | Degree of Separation: 2
+laundry_room (AtLocation | Weight: 1.00) <- sink (AtLocation | Weight: 1.00) <- bowl | Total Weight: 1.00 | Degree of Separation: 2
+
+Locations for broccoli:
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- broccoli | Total Weight: 5.29 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 10.12) -> plate (AtLocation | Weight: 1.00) <- broccoli | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- sink (AtLocation | Weight: 1.00) <- plate (AtLocation | Weight: 1.00) <- broccoli | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- knife (RelatedTo | Weight: 1.09) -> plate (AtLocation | Weight: 1.00) <- broccoli | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- cabbage (RelatedTo | Weight: 1.00) -> broccoli | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- fork (RelatedTo | Weight: 2.38) -> plate (AtLocation | Weight: 1.00) <- broccoli | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 7.21) <- plate (AtLocation | Weight: 1.00) <- broccoli | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (RelatedTo | Weight: 5.00) -> plate (AtLocation | Weight: 1.00) <- broccoli | Total Weight: 5.29 | Degree of Separation: 3
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 7.21) <- plate (AtLocation | Weight: 1.00) <- broccoli | Total Weight: 4.00 | Degree of Separation: 3
+dining_room (AtLocation | Weight: 4.00) <- table (RelatedTo | Weight: 5.00) -> plate (AtLocation | Weight: 1.00) <- broccoli | Total Weight: 4.00 | Degree of Separation: 3
+
+Locations for spoon:
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.23) -> spoon | Total Weight: 5.29 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- fork (RelatedTo | Weight: 1.17) -> spoon | Total Weight: 5.29 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 1.00) <- spoon | Total Weight: 5.29 | Degree of Separation: 2
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 1.00) <- spoon | Total Weight: 4.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 3.46) <- silverware (RelatedTo | Weight: 1.10) -> spoon | Total Weight: 3.46 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 2.00) <- dishwasher (AtLocation | Weight: 1.00) <- spoon | Total Weight: 2.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- ladle (RelatedTo | Weight: 1.61) -> spoon | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- table (AtLocation | Weight: 1.00) <- spoon | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 4.23) -> table (AtLocation | Weight: 1.00) <- spoon | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 3.20) -> table (AtLocation | Weight: 1.00) <- spoon | Total Weight: 8.49 | Degree of Separation: 3
+
+Locations for book:
+bedroom (AtLocation | Weight: 2.00) <- book | Total Weight: 2.00 | Degree of Separation: 1
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 2.00) <- book | Total Weight: 5.29 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 2.00) <- book | Total Weight: 5.29 | Degree of Separation: 2
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 2.00) <- book | Total Weight: 4.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- cover (RelatedTo | Weight: 4.76) -> book | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- cover (RelatedTo | Weight: 1.40) -> book | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 1.00) <- book | Total Weight: 1.00 | Degree of Separation: 2
+living_room (AtLocation | Weight: 1.00) <- coffee_table (AtLocation | Weight: 1.00) <- book | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- bookshelf (AtLocation | Weight: 4.90) <- book | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- desk (AtLocation | Weight: 3.46) <- book | Total Weight: 1.00 | Degree of Separation: 2
+
+Locations for pen:
+office (AtLocation | Weight: 7.21) <- pen | Total Weight: 7.21 | Degree of Separation: 1
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 1.00) <- pen | Total Weight: 5.29 | Degree of Separation: 2
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 1.00) <- pen | Total Weight: 4.00 | Degree of Separation: 2
+office (AtLocation | Weight: 2.00) <- desk_drawer (AtLocation | Weight: 1.00) <- pen | Total Weight: 2.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 2.00) <- pen | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- table (AtLocation | Weight: 1.00) <- pen | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 4.23) -> table (AtLocation | Weight: 1.00) <- pen | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 3.20) -> table (AtLocation | Weight: 1.00) <- pen | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 1.00) -> pew/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> pen | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 1.00) -> tidy/n (RelatedTo | Weight: 1.00) -> pen | Total Weight: 8.49 | Degree of Separation: 3
+
+Locations for clock:
+office (AtLocation | Weight: 2.00) <- clock | Total Weight: 2.00 | Degree of Separation: 1
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 1.00) <- clock | Total Weight: 5.29 | Degree of Separation: 2
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 1.00) <- clock | Total Weight: 4.00 | Degree of Separation: 2
+office (AtLocation | Weight: 2.00) <- machine (IsA | Weight: 2.00) <- clock | Total Weight: 2.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- desk (AtLocation | Weight: 4.47) <- clock | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- table (AtLocation | Weight: 1.00) <- clock | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- house (AtLocation | Weight: 2.83) <- clock | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- shelf (AtLocation | Weight: 2.83) <- clock | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 4.23) -> table (AtLocation | Weight: 1.00) <- clock | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 3.20) -> table (AtLocation | Weight: 1.00) <- clock | Total Weight: 8.49 | Degree of Separation: 3
+
+Locations for calculator:
+office (AtLocation | Weight: 2.00) <- calculator | Total Weight: 2.00 | Degree of Separation: 1
+kitchen (AtLocation | Weight: 5.29) <- table (RelatedTo | Weight: 1.00) -> calculator | Total Weight: 5.29 | Degree of Separation: 2
+office (AtLocation | Weight: 4.90) <- computer (IsA | Weight: 1.00) <- calculator | Total Weight: 4.90 | Degree of Separation: 2
+dining_room (AtLocation | Weight: 4.00) <- table (RelatedTo | Weight: 1.00) -> calculator | Total Weight: 4.00 | Degree of Separation: 2
+office (AtLocation | Weight: 2.00) <- desk_drawer (AtLocation | Weight: 1.00) <- calculator | Total Weight: 2.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- desk (AtLocation | Weight: 4.00) <- calculator | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- table (RelatedTo | Weight: 1.00) -> calculator | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 4.23) -> table (RelatedTo | Weight: 1.00) -> calculator | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 3.20) -> table (RelatedTo | Weight: 1.00) -> calculator | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 2.85) -> desk (AtLocation | Weight: 4.00) <- calculator | Total Weight: 8.49 | Degree of Separation: 3
+
+Locations for mug:
+kitchen (AtLocation | Weight: 3.46) <- dish (IsA | Weight: 1.00) <- mug | Total Weight: 3.46 | Degree of Separation: 2
+pantry (AtLocation | Weight: 3.46) <- container (IsA | Weight: 2.00) <- mug | Total Weight: 3.46 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 2.00) <- cup (RelatedTo | Weight: 2.84) -> mug | Total Weight: 2.00 | Degree of Separation: 2
+office (AtLocation | Weight: 2.00) <- coffee (RelatedTo | Weight: 1.97) -> mug | Total Weight: 2.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- container (IsA | Weight: 2.00) <- mug | Total Weight: 1.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- cupboard (AtLocation | Weight: 2.00) <- mug | Total Weight: 1.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- dish (IsA | Weight: 1.00) <- mug | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- container (IsA | Weight: 2.00) <- mug | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- sink (AtLocation | Weight: 1.00) <- cup (RelatedTo | Weight: 2.84) -> mug | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- sink (AtLocation | Weight: 1.00) <- dish (IsA | Weight: 1.00) <- mug | Total Weight: 6.93 | Degree of Separation: 3
+
+Locations for platter:
+kitchen (AtLocation | Weight: 3.46) <- dish (IsA | Weight: 1.00) <- platter | Total Weight: 3.46 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- dish (IsA | Weight: 1.00) <- platter | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> lanx/n (RelatedTo | Weight: 1.00) -> platter | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> zeroah/n (RelatedTo | Weight: 1.00) -> platter | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- sink (AtLocation | Weight: 1.00) <- dish (IsA | Weight: 1.00) <- platter | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- knife (RelatedTo | Weight: 1.00) -> slice/n (RelatedTo | Weight: 1.00) -> platter | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 11.48) -> dish (IsA | Weight: 1.00) <- platter | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> serving_dish/n (RelatedTo | Weight: 1.00) -> platter | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> slice/n (RelatedTo | Weight: 1.00) -> platter | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> dish (IsA | Weight: 1.00) <- platter | Total Weight: 5.29 | Degree of Separation: 3
+
+Locations for clothing:
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 10.00) <- clothing | Total Weight: 5.29 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 2.83) <- cloth (UsedFor | Weight: 2.83) -> clothing | Total Weight: 2.83 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 2.83) <- cloth (UsedFor | Weight: 2.83) -> clothing | Total Weight: 2.83 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 2.83) <- bureau (UsedFor | Weight: 2.83) -> clothing | Total Weight: 2.83 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- textile (UsedFor | Weight: 1.00) -> clothing | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 6.00) <- clothing | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 1.00) <- bureau (UsedFor | Weight: 2.83) -> clothing | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- clothes (RelatedTo | Weight: 1.00) -> clothing | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- trunk (AtLocation | Weight: 3.46) <- clothing | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- jeans (UsedFor | Weight: 1.00) -> clothing | Total Weight: 1.00 | Degree of Separation: 2
+
+Locations for sock:
+kitchen (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 3.40) -> sock | Total Weight: 2.83 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 3.40) -> sock | Total Weight: 2.83 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- cover (RelatedTo | Weight: 3.24) -> sock | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 6.00) <- sock | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 1.00) <- feet (RelatedTo | Weight: 6.09) -> sock | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- clothes (RelatedTo | Weight: 1.31) -> sock | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- house (AtLocation | Weight: 1.00) <- sock | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 7.75) <- dresser (AtLocation | Weight: 2.83) <- clothes (RelatedTo | Weight: 1.31) -> sock | Total Weight: 7.75 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 7.75) <- dresser (AtLocation | Weight: 2.00) <- drawer (AtLocation | Weight: 6.00) <- sock | Total Weight: 7.75 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.38) -> white (RelatedTo | Weight: 1.27) -> sock | Total Weight: 5.29 | Degree of Separation: 3
+
+Locations for beer:
+pantry (AtLocation | Weight: 3.46) <- container (AtLocation | Weight: 1.00) <- beer | Total Weight: 3.46 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 2.83) <- fridge (AtLocation | Weight: 2.00) <- beer | Total Weight: 2.83 | Degree of Separation: 2
+pantry (AtLocation | Weight: 2.00) <- can (AtLocation | Weight: 2.00) <- beer | Total Weight: 2.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 2.00) <- can (UsedFor | Weight: 1.00) -> beer | Total Weight: 2.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- can (AtLocation | Weight: 2.00) <- beer | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- can (UsedFor | Weight: 1.00) -> beer | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- container (AtLocation | Weight: 1.00) <- beer | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 1.00) <- minibar (UsedFor | Weight: 2.00) -> beer | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- shelf (AtLocation | Weight: 2.00) <- beer | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- container (AtLocation | Weight: 1.00) <- beer | Total Weight: 7.21 | Degree of Separation: 3
+
+Locations for juice:
+kitchen (AtLocation | Weight: 2.83) <- fridge (AtLocation | Weight: 2.00) <- juice | Total Weight: 2.83 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- milk (RelatedTo | Weight: 4.59) -> juice | Total Weight: 1.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 1.76) -> juice | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- refrigerator (AtLocation | Weight: 2.83) <- juice | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 3.47) -> drink (RelatedTo | Weight: 1.26) -> juice | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.59) -> refrigerator (AtLocation | Weight: 2.83) <- juice | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.47) -> milk (RelatedTo | Weight: 4.59) -> juice | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> hay_tea/n (RelatedTo | Weight: 1.00) -> juice | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- wine (RelatedTo | Weight: 3.20) -> juice | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 1.76) -> juice | Total Weight: 5.29 | Degree of Separation: 3
+
+Locations for lemon:
+kitchen (AtLocation | Weight: 2.83) <- fridge (AtLocation | Weight: 1.00) <- lemon | Total Weight: 2.83 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 2.93) -> lemon | Total Weight: 1.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 1.00) <- lemon | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- refrigerator (AtLocation | Weight: 1.00) <- lemon | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.59) -> refrigerator (AtLocation | Weight: 1.00) <- lemon | Total Weight: 7.21 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 6.00) <- mirror (RelatedTo | Weight: 1.00) -> bloody_mary/n (RelatedTo | Weight: 1.00) -> lemon | Total Weight: 6.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 2.93) -> lemon | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 1.00) <- lemon | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 4.90) <- grape (RelatedTo | Weight: 3.26) -> fruit (RelatedTo | Weight: 2.93) -> lemon | Total Weight: 4.90 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 4.90) <- grape (RelatedTo | Weight: 3.26) -> fruit (IsA | Weight: 1.00) <- lemon | Total Weight: 4.90 | Degree of Separation: 3
+
+Locations for bottle:
+pantry (AtLocation | Weight: 3.46) <- container (RelatedTo | Weight: 1.46) -> bottle | Total Weight: 3.46 | Degree of Separation: 2
+pantry (AtLocation | Weight: 3.46) <- container (IsA | Weight: 2.83) <- bottle | Total Weight: 3.46 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 2.83) <- fridge (AtLocation | Weight: 1.00) <- bottle | Total Weight: 2.83 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- container (RelatedTo | Weight: 1.46) -> bottle | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- container (IsA | Weight: 2.83) <- bottle | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- container (RelatedTo | Weight: 1.46) -> bottle | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- container (IsA | Weight: 2.83) <- bottle | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 3.47) -> drink (AtLocation | Weight: 1.00) <- bottle | Total Weight: 7.21 | Degree of Separation: 3
+office (AtLocation | Weight: 7.21) <- pen (RelatedTo | Weight: 1.00) -> ink_bottle/n (RelatedTo | Weight: 1.00) -> bottle | Total Weight: 7.21 | Degree of Separation: 3
+office (AtLocation | Weight: 5.66) <- telephone (RelatedTo | Weight: 1.00) -> cradle/n (RelatedTo | Weight: 1.00) -> bottle | Total Weight: 5.66 | Degree of Separation: 3
+
+Locations for ball:
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 2.00) <- ball | Total Weight: 5.29 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- basket (RelatedTo | Weight: 1.19) -> ball | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 1.00) <- sack (AtLocation | Weight: 1.00) <- ball | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 1.00) <- basket (RelatedTo | Weight: 1.19) -> ball | Total Weight: 1.00 | Degree of Separation: 2
+child's_bedroom (AtLocation | Weight: 1.00) <- toy (RelatedTo | Weight: 7.62) -> ball | Total Weight: 1.00 | Degree of Separation: 2
+child's_bedroom (AtLocation | Weight: 1.00) <- toy (RelatedTo | Weight: 2.00) -> ball | Total Weight: 1.00 | Degree of Separation: 2
+child's_bedroom (AtLocation | Weight: 1.00) <- toy (IsA | Weight: 7.75) <- ball | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 4.89) -> egg (RelatedTo | Weight: 1.04) -> ball | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 2.32) -> apple (RelatedTo | Weight: 1.10) -> ball | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.59) -> party (IsA | Weight: 1.00) <- ball | Total Weight: 7.21 | Degree of Separation: 3
+
+Locations for box:
+office (AtLocation | Weight: 7.21) <- pen (AtLocation | Weight: 1.00) <- box | Total Weight: 7.21 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 3.46) <- box | Total Weight: 5.29 | Degree of Separation: 2
+pantry (AtLocation | Weight: 3.46) <- container (RelatedTo | Weight: 8.45) -> box | Total Weight: 3.46 | Degree of Separation: 2
+pantry (AtLocation | Weight: 3.46) <- container (IsA | Weight: 6.63) <- box | Total Weight: 3.46 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- container (RelatedTo | Weight: 8.45) -> box | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- container (IsA | Weight: 6.63) <- box | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 3.16) -> four (RelatedTo | Weight: 1.76) -> box | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 1.00) -> pew/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> box | Total Weight: 8.49 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- container (RelatedTo | Weight: 8.45) -> box | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- container (IsA | Weight: 6.63) <- box | Total Weight: 7.21 | Degree of Separation: 3
+
+Locations for towel:
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 1.00) <- towel | Total Weight: 5.29 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- wash_cloth (IsA | Weight: 1.00) <- towel | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- linen_closet (AtLocation | Weight: 1.00) <- towel | Total Weight: 1.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- cupboard (AtLocation | Weight: 1.00) <- towel | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 2.14) -> napkin (RelatedTo | Weight: 3.72) -> towel | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- sink (AtLocation | Weight: 1.00) <- wash_cloth (IsA | Weight: 1.00) <- towel | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.05) -> cupboard (AtLocation | Weight: 1.00) <- towel | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 2.00) <- napkin (RelatedTo | Weight: 3.72) -> towel | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (RelatedTo | Weight: 4.82) -> napkin (RelatedTo | Weight: 3.72) -> towel | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 4.47) <- pantry (AtLocation | Weight: 1.00) <- cupboard (AtLocation | Weight: 1.00) <- towel | Total Weight: 4.47 | Degree of Separation: 3
+
+Locations for scissors:
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 1.00) <- scissors | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- desk (AtLocation | Weight: 3.46) <- scissors | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- house (AtLocation | Weight: 1.00) <- scissors | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 2.85) -> desk (AtLocation | Weight: 3.46) <- scissors | Total Weight: 8.49 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 7.75) <- dresser (AtLocation | Weight: 2.00) <- drawer (AtLocation | Weight: 1.00) <- scissors | Total Weight: 7.75 | Degree of Separation: 3
+office (AtLocation | Weight: 7.21) <- pen (RelatedTo | Weight: 2.68) -> paper (RelatedTo | Weight: 1.20) -> scissors | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- knife (RelatedTo | Weight: 6.68) -> cut (RelatedTo | Weight: 4.98) -> scissors | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- knife (RelatedTo | Weight: 1.00) -> cut/v (RelatedTo | Weight: 1.00) -> scissors | Total Weight: 6.93 | Degree of Separation: 3
+garden (AtLocation | Weight: 6.32) <- lizard (RelatedTo | Weight: 1.00) -> rock/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> scissors | Total Weight: 6.32 | Degree of Separation: 3
+garden (AtLocation | Weight: 6.32) <- lizard (RelatedTo | Weight: 1.00) -> paper/n (RelatedTo | Weight: 1.00) -> scissors | Total Weight: 6.32 | Degree of Separation: 3
+
+Locations for shirt:
+bedroom (AtLocation | Weight: 7.75) <- dresser (AtLocation | Weight: 1.00) <- shirt | Total Weight: 7.75 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 7.75) <- shirt | Total Weight: 5.29 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 1.00) <- shirt | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- clothes (IsA | Weight: 2.00) <- shirt | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 7.75) <- dresser (AtLocation | Weight: 2.83) <- clothes (IsA | Weight: 2.00) <- shirt | Total Weight: 7.75 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 7.75) <- dresser (AtLocation | Weight: 2.00) <- drawer (AtLocation | Weight: 1.00) <- shirt | Total Weight: 7.75 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 10.00) <- clothing (RelatedTo | Weight: 1.14) -> shirt | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 4.47) <- clothes (IsA | Weight: 2.00) <- shirt | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 1.00) <- dress (RelatedTo | Weight: 1.23) -> shirt | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (RelatedTo | Weight: 2.44) -> clothes (IsA | Weight: 2.00) <- shirt | Total Weight: 5.29 | Degree of Separation: 3
+
+Locations for ruler:
+office (AtLocation | Weight: 1.00) <- ruler | Total Weight: 1.00 | Degree of Separation: 1
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 1.00) <- ruler | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- desk (AtLocation | Weight: 4.90) <- ruler | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 2.85) -> desk (AtLocation | Weight: 4.90) <- ruler | Total Weight: 8.49 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 7.75) <- dresser (AtLocation | Weight: 2.00) <- drawer (AtLocation | Weight: 1.00) <- ruler | Total Weight: 7.75 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> rule/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> ruler | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (RelatedTo | Weight: 7.90) -> desk (AtLocation | Weight: 4.90) <- ruler | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (RelatedTo | Weight: 3.63) -> desk (AtLocation | Weight: 4.90) <- ruler | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (IsA | Weight: 2.83) <- desk (AtLocation | Weight: 4.90) <- ruler | Total Weight: 5.29 | Degree of Separation: 3
+office (AtLocation | Weight: 4.90) <- computer (RelatedTo | Weight: 3.83) -> desk (AtLocation | Weight: 4.90) <- ruler | Total Weight: 4.90 | Degree of Separation: 3
+
+Locations for camera:
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 1.00) <- camera | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 7.75) <- dresser (AtLocation | Weight: 2.00) <- drawer (AtLocation | Weight: 1.00) <- camera | Total Weight: 7.75 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 6.00) <- mirror (RelatedTo | Weight: 1.00) -> pentamirror/n (RelatedTo | Weight: 1.00) -> camera | Total Weight: 6.00 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 6.00) <- mirror (RelatedTo | Weight: 1.00) -> single_lens_reflex/a (RelatedTo | Weight: 1.00) -> camera | Total Weight: 6.00 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 6.00) <- mirror (RelatedTo | Weight: 1.00) -> oroheliograph/n (RelatedTo | Weight: 1.00) -> camera | Total Weight: 6.00 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 6.00) <- mirror (RelatedTo | Weight: 1.00) -> focal_plane/n (RelatedTo | Weight: 1.00) -> camera | Total Weight: 6.00 | Degree of Separation: 3
+office (AtLocation | Weight: 5.66) <- telephone (RelatedTo | Weight: 1.00) -> photographone/n (RelatedTo | Weight: 1.00) -> camera | Total Weight: 5.66 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> magazine_camera/n (RelatedTo | Weight: 1.00) -> camera | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> oroheliograph/n (RelatedTo | Weight: 1.00) -> camera | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> phototheodolite/n (RelatedTo | Weight: 1.00) -> camera | Total Weight: 5.29 | Degree of Separation: 3
+
+Locations for mushroom:
+garden (AtLocation | Weight: 2.00) <- fungus (IsA | Weight: 5.29) <- mushroom | Total Weight: 2.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- fungus (IsA | Weight: 5.29) <- mushroom | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (Synonym | Weight: 1.00) -> edible/n (RelatedTo | Weight: 1.00) -> mushroom | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- vegetable (IsA | Weight: 1.00) <- mushroom | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- potato (RelatedTo | Weight: 1.00) -> cepelinas/n (RelatedTo | Weight: 1.00) -> mushroom | Total Weight: 6.93 | Degree of Separation: 3
+pantry (AtLocation | Weight: 6.63) <- potato (RelatedTo | Weight: 1.00) -> cepelinas/n (RelatedTo | Weight: 1.00) -> mushroom | Total Weight: 6.63 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> lamella/n (RelatedTo | Weight: 1.00) -> mushroom | Total Weight: 5.29 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (AtLocation | Weight: 1.00) <- fungus (IsA | Weight: 5.29) <- mushroom | Total Weight: 4.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (Synonym | Weight: 1.00) -> edible/n (RelatedTo | Weight: 1.00) -> mushroom | Total Weight: 4.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- vegetable (IsA | Weight: 1.00) <- mushroom | Total Weight: 4.00 | Degree of Separation: 3
+
+Locations for pastry:
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 10.67) -> cake (RelatedTo | Weight: 6.44) -> pastry | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.13) -> roll (RelatedTo | Weight: 1.01) -> pastry | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> confection/n (RelatedTo | Weight: 1.00) -> pastry | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- knife (RelatedTo | Weight: 1.00) -> slice/n (RelatedTo | Weight: 1.00) -> pastry | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- potato (RelatedTo | Weight: 1.00) -> flour/n (RelatedTo | Weight: 1.00) -> pastry | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- potato (RelatedTo | Weight: 1.00) -> curry_puff/n (RelatedTo | Weight: 1.00) -> pastry | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- potato (RelatedTo | Weight: 1.00) -> homity_pie/n (RelatedTo | Weight: 1.00) -> pastry | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- potato (RelatedTo | Weight: 1.00) -> woolton_pie/n (RelatedTo | Weight: 1.00) -> pastry | Total Weight: 6.93 | Degree of Separation: 3
+pantry (AtLocation | Weight: 6.63) <- potato (RelatedTo | Weight: 1.00) -> flour/n (RelatedTo | Weight: 1.00) -> pastry | Total Weight: 6.63 | Degree of Separation: 3
+pantry (AtLocation | Weight: 6.63) <- potato (RelatedTo | Weight: 1.00) -> curry_puff/n (RelatedTo | Weight: 1.00) -> pastry | Total Weight: 6.63 | Degree of Separation: 3
+
+Locations for cookie:
+pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 4.90) <- cookie | Total Weight: 4.47 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 10.67) -> cake (RelatedTo | Weight: 1.40) -> cookie | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.10) -> biscuit (RelatedTo | Weight: 1.55) -> cookie | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 5.66) <- chocolate (RelatedTo | Weight: 1.02) -> cookie | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- cake (RelatedTo | Weight: 1.40) -> cookie | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> muffin/n (RelatedTo | Weight: 1.00) -> cookie | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 4.47) <- pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 4.90) <- cookie | Total Weight: 4.47 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (RelatedTo | Weight: 10.67) -> cake (RelatedTo | Weight: 1.40) -> cookie | Total Weight: 4.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (RelatedTo | Weight: 1.10) -> biscuit (RelatedTo | Weight: 1.55) -> cookie | Total Weight: 4.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 5.66) <- chocolate (RelatedTo | Weight: 1.02) -> cookie | Total Weight: 4.00 | Degree of Separation: 3
+
+Locations for pear:
+pantry (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 1.96) -> pear | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 2.32) -> apple (RelatedTo | Weight: 3.07) -> pear | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 1.96) -> pear | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 4.90) <- grape (RelatedTo | Weight: 3.26) -> fruit (RelatedTo | Weight: 1.96) -> pear | Total Weight: 4.90 | Degree of Separation: 3
+office (AtLocation | Weight: 4.90) <- computer (RelatedTo | Weight: 4.16) -> apple (RelatedTo | Weight: 3.07) -> pear | Total Weight: 4.90 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 4.47) <- pantry (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 1.96) -> pear | Total Weight: 4.47 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 1.96) -> pear | Total Weight: 4.47 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (RelatedTo | Weight: 2.32) -> apple (RelatedTo | Weight: 3.07) -> pear | Total Weight: 4.00 | Degree of Separation: 3
+office (AtLocation | Weight: 3.46) <- ficus (RelatedTo | Weight: 1.00) -> fig/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> pear | Total Weight: 3.46 | Degree of Separation: 3
+pantry (AtLocation | Weight: 3.46) <- container (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 1.96) -> pear | Total Weight: 3.46 | Degree of Separation: 3
+
+Locations for flower:
+bedroom (AtLocation | Weight: 1.00) <- shelf (AtLocation | Weight: 1.00) <- flower | Total Weight: 1.00 | Degree of Separation: 2
+garden (AtLocation | Weight: 1.00) <- rose (RelatedTo | Weight: 4.38) -> flower | Total Weight: 1.00 | Degree of Separation: 2
+garden (AtLocation | Weight: 1.00) <- rose (RelatedTo | Weight: 1.71) -> flower | Total Weight: 1.00 | Degree of Separation: 2
+garden (AtLocation | Weight: 1.00) <- plant (RelatedTo | Weight: 7.68) -> flower | Total Weight: 1.00 | Degree of Separation: 2
+garden (AtLocation | Weight: 1.00) <- plant (RelatedTo | Weight: 4.27) -> flower | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.09) -> seed (RelatedTo | Weight: 1.62) -> flower | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> pot/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> flower | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> fairy_butter/n (RelatedTo | Weight: 1.00) -> flower | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> bilamellate/a (RelatedTo | Weight: 1.00) -> flower | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> disk/n (RelatedTo | Weight: 1.00) -> flower | Total Weight: 5.29 | Degree of Separation: 3
+
+Locations for strawberry:
+pantry (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 1.00) <- strawberry | Total Weight: 1.00 | Degree of Separation: 2
+garden (AtLocation | Weight: 1.00) <- rose (RelatedTo | Weight: 1.00) -> strawberry | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> ellagic_acid/n (RelatedTo | Weight: 1.00) -> strawberry | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 1.00) <- strawberry | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 4.90) <- grape (RelatedTo | Weight: 3.26) -> fruit (IsA | Weight: 1.00) <- strawberry | Total Weight: 4.90 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 4.47) <- pantry (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 1.00) <- strawberry | Total Weight: 4.47 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 1.00) <- strawberry | Total Weight: 4.47 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (RelatedTo | Weight: 1.00) -> ellagic_acid/n (RelatedTo | Weight: 1.00) -> strawberry | Total Weight: 4.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 3.46) <- container (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 1.00) <- strawberry | Total Weight: 3.46 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- fridge (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 1.00) <- strawberry | Total Weight: 2.83 | Degree of Separation: 3
+
+Locations for hat:
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 4.00) <- hat | Total Weight: 5.29 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- shelf (AtLocation | Weight: 1.00) <- hat | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> pot/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> hat | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> plate/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> hat | Total Weight: 7.21 | Degree of Separation: 3
+office (AtLocation | Weight: 7.21) <- pen (AtLocation | Weight: 1.00) <- box (AtLocation | Weight: 1.00) <- hat | Total Weight: 7.21 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 6.00) <- mirror (RelatedTo | Weight: 1.00) -> hall_tree/n (RelatedTo | Weight: 1.00) -> hat | Total Weight: 6.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 2.62) -> home (AtLocation | Weight: 1.00) <- hat | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 10.00) <- clothing (RelatedTo | Weight: 1.00) -> hat | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 4.90) <- shelf (AtLocation | Weight: 1.00) <- hat | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 3.46) <- box (AtLocation | Weight: 1.00) <- hat | Total Weight: 5.29 | Degree of Separation: 3
+
+Locations for carrot:
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- orange (RelatedTo | Weight: 1.71) -> carrot | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- vegetable (RelatedTo | Weight: 1.84) -> carrot | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- potato (RelatedTo | Weight: 1.00) -> root_vegetable/n (RelatedTo | Weight: 1.00) -> carrot | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- potato (RelatedTo | Weight: 1.00) -> cawl/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> carrot | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- potato (RelatedTo | Weight: 1.00) -> irish_stew/n (RelatedTo | Weight: 1.00) -> carrot | Total Weight: 6.93 | Degree of Separation: 3
+pantry (AtLocation | Weight: 6.63) <- potato (RelatedTo | Weight: 1.00) -> root_vegetable/n (RelatedTo | Weight: 1.00) -> carrot | Total Weight: 6.63 | Degree of Separation: 3
+pantry (AtLocation | Weight: 6.63) <- potato (RelatedTo | Weight: 1.00) -> cawl/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> carrot | Total Weight: 6.63 | Degree of Separation: 3
+pantry (AtLocation | Weight: 6.63) <- potato (RelatedTo | Weight: 1.00) -> irish_stew/n (RelatedTo | Weight: 1.00) -> carrot | Total Weight: 6.63 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- orange (RelatedTo | Weight: 1.71) -> carrot | Total Weight: 4.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- vegetable (RelatedTo | Weight: 1.84) -> carrot | Total Weight: 4.00 | Degree of Separation: 3
+
+Locations for cucumber:
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- vegetable (RelatedTo | Weight: 2.21) -> cucumber | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- vegetable (IsA | Weight: 3.46) <- cucumber | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- pickle (RelatedTo | Weight: 1.79) -> cucumber | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- pickle (RelatedTo | Weight: 1.36) -> cucumber | Total Weight: 7.21 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 2.83) <- pickle (RelatedTo | Weight: 1.79) -> cucumber | Total Weight: 4.47 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 2.83) <- pickle (RelatedTo | Weight: 1.36) -> cucumber | Total Weight: 4.47 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- vegetable (RelatedTo | Weight: 2.21) -> cucumber | Total Weight: 4.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- vegetable (IsA | Weight: 3.46) <- cucumber | Total Weight: 4.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- pickle (RelatedTo | Weight: 1.79) -> cucumber | Total Weight: 4.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- pickle (RelatedTo | Weight: 1.36) -> cucumber | Total Weight: 4.00 | Degree of Separation: 3
+
+Locations for asparagus:
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- vegetable (RelatedTo | Weight: 1.21) -> asparagus | Total Weight: 7.21 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- vegetable (IsA | Weight: 1.00) <- asparagus | Total Weight: 7.21 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- vegetable (RelatedTo | Weight: 1.21) -> asparagus | Total Weight: 4.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- vegetable (IsA | Weight: 1.00) <- asparagus | Total Weight: 4.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 2.00) <- bread (RelatedTo | Weight: 1.00) -> asparagus_roll/n (RelatedTo | Weight: 1.00) -> asparagus | Total Weight: 2.00 | Degree of Separation: 3
+garden (AtLocation | Weight: 1.00) <- plant (RelatedTo | Weight: 2.76) -> vegetable (RelatedTo | Weight: 1.21) -> asparagus | Total Weight: 1.00 | Degree of Separation: 3
+garden (AtLocation | Weight: 1.00) <- plant (RelatedTo | Weight: 2.76) -> vegetable (IsA | Weight: 1.00) <- asparagus | Total Weight: 1.00 | Degree of Separation: 3
+garden (AtLocation | Weight: 1.00) <- plant (RelatedTo | Weight: 1.00) -> aspargine/n (RelatedTo | Weight: 1.00) -> asparagus | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 7.73) -> bread (RelatedTo | Weight: 1.00) -> asparagus_roll/n (RelatedTo | Weight: 1.00) -> asparagus | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 7.71) -> soup (RelatedTo | Weight: 1.46) -> vegetable (RelatedTo | Weight: 1.21) -> asparagus | Total Weight: 7.21 | Degree of Separation: 4
+
+Locations for radish:
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- vegetable (IsA | Weight: 3.46) <- radish | Total Weight: 7.21 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- vegetable (IsA | Weight: 3.46) <- radish | Total Weight: 4.00 | Degree of Separation: 3
+garden (AtLocation | Weight: 1.00) <- soil (RelatedTo | Weight: 1.00) -> daikon/n (RelatedTo | Weight: 1.00) -> radish | Total Weight: 1.00 | Degree of Separation: 3
+garden (AtLocation | Weight: 1.00) <- plant (RelatedTo | Weight: 2.76) -> vegetable (IsA | Weight: 3.46) <- radish | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 7.71) -> soup (RelatedTo | Weight: 1.46) -> vegetable (IsA | Weight: 3.46) <- radish | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 5.96) -> corn (RelatedTo | Weight: 7.85) -> vegetable (IsA | Weight: 3.46) <- radish | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 4.52) -> crop (RelatedTo | Weight: 1.03) -> vegetable (IsA | Weight: 3.46) <- radish | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.09) -> seed (RelatedTo | Weight: 1.00) -> raphanin/n (RelatedTo | Weight: 1.00) -> radish | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> herbicarnivorous/a (RelatedTo | Weight: 1.00) -> vegetable (IsA | Weight: 3.46) <- radish | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> ellagic_acid/n (RelatedTo | Weight: 1.00) -> vegetable (IsA | Weight: 3.46) <- radish | Total Weight: 7.21 | Degree of Separation: 4
+
+Locations for zucchini:
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- vegetable (IsA | Weight: 1.00) <- zucchini | Total Weight: 7.21 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- vegetable (IsA | Weight: 1.00) <- zucchini | Total Weight: 4.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 3.46) <- dish (RelatedTo | Weight: 1.00) -> ratatouille/n (RelatedTo | Weight: 1.00) -> zucchini | Total Weight: 3.46 | Degree of Separation: 3
+office (AtLocation | Weight: 2.00) <- keyboard (UsedFor | Weight: 1.00) -> type (IsA | Weight: 1.00) <- zucchini | Total Weight: 2.00 | Degree of Separation: 3
+office (AtLocation | Weight: 2.00) <- keyboard (RelatedTo | Weight: 1.31) -> type (IsA | Weight: 1.00) <- zucchini | Total Weight: 2.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- pie (RelatedTo | Weight: 1.00) -> kolokithopita/n (RelatedTo | Weight: 1.00) -> zucchini | Total Weight: 1.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 1.00) <- squash (IsA | Weight: 1.00) <- zucchini | Total Weight: 1.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 1.00) <- dish (RelatedTo | Weight: 1.00) -> ratatouille/n (RelatedTo | Weight: 1.00) -> zucchini | Total Weight: 1.00 | Degree of Separation: 3
+garden (AtLocation | Weight: 1.00) <- plant (RelatedTo | Weight: 2.76) -> vegetable (IsA | Weight: 1.00) <- zucchini | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 10.39) <- computers (RelatedTo | Weight: 1.00) -> print (RelatedTo | Weight: 3.32) -> type (IsA | Weight: 1.00) <- zucchini | Total Weight: 10.39 | Degree of Separation: 4
+
+Locations for tie:
+office (AtLocation | Weight: 1.00) <- cord (UsedFor | Weight: 2.83) -> tie | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 6.93) <- knife (RelatedTo | Weight: 1.00) -> pizza_cutter/n (RelatedTo | Weight: 1.00) -> tie | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> intertie/n (RelatedTo | Weight: 1.00) -> tie | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (RelatedTo | Weight: 1.00) -> header/n (RelatedTo | Weight: 1.00) -> tie | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 10.00) <- clothing (RelatedTo | Weight: 1.00) -> tie | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 10.00) <- clothing (IsA | Weight: 1.00) <- tie | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 2.00) <- neckwear (IsA | Weight: 3.46) <- tie | Total Weight: 5.29 | Degree of Separation: 3
+dining_room (AtLocation | Weight: 4.00) <- table (RelatedTo | Weight: 1.00) -> header/n (RelatedTo | Weight: 1.00) -> tie | Total Weight: 4.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (UsedFor | Weight: 2.83) -> clothing (RelatedTo | Weight: 1.00) -> tie | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (UsedFor | Weight: 2.83) -> clothing (IsA | Weight: 1.00) <- tie | Total Weight: 2.83 | Degree of Separation: 3
+
+Locations for high_heels:
+kitchen (AtLocation | Weight: 6.93) <- knife (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- knife (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 6.93 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 6.93) <- knife (RelatedTo | Weight: 1.00) -> dagger (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 6.93 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 6.93) <- knife (RelatedTo | Weight: 1.00) -> dagger (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 6.93 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- knife (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- knife (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.09) -> knife (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.09) -> knife (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- fork (RelatedTo | Weight: 1.00) -> knife (RelatedTo | Weight: 1.00) -> stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- fork (RelatedTo | Weight: 1.00) -> knife (IsA | Weight: 1.00) <- stiletto/n (Synonym | Weight: 1.00) -> high_heels | Total Weight: 5.29 | Degree of Separation: 4
+
+Locations for popcorn:
+pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 1.00) <- popcorn | Total Weight: 4.47 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 6.93) <- potato (RelatedTo | Weight: 1.00) -> chugchucara/n (RelatedTo | Weight: 1.00) -> popcorn | Total Weight: 6.93 | Degree of Separation: 3
+pantry (AtLocation | Weight: 6.63) <- potato (RelatedTo | Weight: 1.00) -> chugchucara/n (RelatedTo | Weight: 1.00) -> popcorn | Total Weight: 6.63 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 4.47) <- pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 1.00) <- popcorn | Total Weight: 4.47 | Degree of Separation: 3
+pantry (AtLocation | Weight: 3.46) <- container (RelatedTo | Weight: 2.73) -> jar (AtLocation | Weight: 1.00) <- popcorn | Total Weight: 3.46 | Degree of Separation: 3
+pantry (AtLocation | Weight: 3.46) <- container (IsA | Weight: 2.83) <- jar (AtLocation | Weight: 1.00) <- popcorn | Total Weight: 3.46 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- glass (RelatedTo | Weight: 1.42) -> jar (AtLocation | Weight: 1.00) <- popcorn | Total Weight: 2.83 | Degree of Separation: 3
+living_room (AtLocation | Weight: 2.83) <- television (AtLocation | Weight: 2.83) <- show (AtLocation | Weight: 2.00) <- popcorn | Total Weight: 2.83 | Degree of Separation: 3
+pantry (AtLocation | Weight: 2.00) <- bread (RelatedTo | Weight: 1.00) -> popper/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> popcorn | Total Weight: 2.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- sugar (RelatedTo | Weight: 1.00) -> kettle_corn/n (RelatedTo | Weight: 1.00) -> popcorn | Total Weight: 1.00 | Degree of Separation: 3
+
+Locations for bell_pepper:
+kitchen (AtLocation | Weight: 6.93) <- potato (RelatedTo | Weight: 1.00) -> ajapsandali/n (RelatedTo | Weight: 1.00) -> bell_pepper | Total Weight: 6.93 | Degree of Separation: 3
+pantry (AtLocation | Weight: 6.63) <- potato (RelatedTo | Weight: 1.00) -> ajapsandali/n (RelatedTo | Weight: 1.00) -> bell_pepper | Total Weight: 6.63 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.00) <- garlic (RelatedTo | Weight: 1.00) -> matbucha/n (RelatedTo | Weight: 1.00) -> bell_pepper | Total Weight: 2.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- sugar (RelatedTo | Weight: 1.00) -> italian_dressing/n (RelatedTo | Weight: 1.00) -> bell_pepper | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- pepper_and_salt (RelatedTo | Weight: 1.00) -> pepper/v (RelatedTo | Weight: 1.00) -> bell_pepper | Total Weight: 1.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 1.00) -> capsicum/n (RelatedTo | Weight: 1.00) -> bell_pepper | Total Weight: 1.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 1.00) -> mango/n (Synonym | Weight: 1.00) -> bell_pepper | Total Weight: 1.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 1.00) <- mango/n (Synonym | Weight: 1.00) -> bell_pepper | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- potato (RelatedTo | Weight: 1.00) -> ajapsandali/n (RelatedTo | Weight: 1.00) -> bell_pepper | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- salt (RelatedTo | Weight: 1.00) -> pepper/n (RelatedTo | Weight: 1.00) -> bell_pepper | Total Weight: 7.21 | Degree of Separation: 4
+
+Locations for dice:
+kitchen (AtLocation | Weight: 6.93) <- potato (RelatedTo | Weight: 1.00) -> woolton_pie/n (RelatedTo | Weight: 1.00) -> dice | Total Weight: 6.93 | Degree of Separation: 3
+pantry (AtLocation | Weight: 6.63) <- potato (RelatedTo | Weight: 1.00) -> woolton_pie/n (RelatedTo | Weight: 1.00) -> dice | Total Weight: 6.63 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 1.00) <- game (IsA | Weight: 1.00) <- dice | Total Weight: 5.29 | Degree of Separation: 3
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 1.00) <- game (IsA | Weight: 1.00) <- dice | Total Weight: 4.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- counter (RelatedTo | Weight: 1.00) -> pachisi/n (RelatedTo | Weight: 1.00) -> dice | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- counter (RelatedTo | Weight: 1.00) -> lurch/n/wikt/en_3 (RelatedTo | Weight: 1.00) -> dice | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.00) <- cup (RelatedTo | Weight: 1.00) -> dice_shaker/n (RelatedTo | Weight: 1.00) -> dice | Total Weight: 2.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- pot (RelatedTo | Weight: 1.00) -> throw/v/wikt/en_1 (RelatedTo | Weight: 1.00) -> dice | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- pot (RelatedTo | Weight: 1.00) -> hazard/n (RelatedTo | Weight: 1.00) -> dice | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- number (RelatedTo | Weight: 1.00) -> die/n/wikt/en_2 (RelatedTo | Weight: 1.00) -> dice | Total Weight: 1.00 | Degree of Separation: 3
+
+Locations for watch:
+office (AtLocation | Weight: 2.00) <- machine (IsA | Weight: 1.00) <- watch | Total Weight: 2.00 | Degree of Separation: 2
+office (AtLocation | Weight: 2.00) <- clock (RelatedTo | Weight: 5.73) -> watch | Total Weight: 2.00 | Degree of Separation: 2
+office (AtLocation | Weight: 2.00) <- clock (RelatedTo | Weight: 5.57) -> watch | Total Weight: 2.00 | Degree of Separation: 2
+office (AtLocation | Weight: 2.00) <- clock (IsA | Weight: 2.83) <- watch | Total Weight: 2.00 | Degree of Separation: 2
+office (AtLocation | Weight: 8.49) <- chair (AtLocation | Weight: 1.00) <- arm (RelatedTo | Weight: 1.39) -> watch | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 1.67) -> device (RelatedTo | Weight: 2.05) -> watch | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 1.00) -> see (RelatedTo | Weight: 1.51) -> watch | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 1.00) -> see (RelatedTo | Weight: 1.00) -> watch | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 5.66) <- telephone (RelatedTo | Weight: 1.00) -> watchphone/n (RelatedTo | Weight: 1.00) -> watch | Total Weight: 5.66 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- piece (RelatedTo | Weight: 1.22) -> watch | Total Weight: 5.29 | Degree of Separation: 3
+
+Locations for peach:
+pantry (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 2.69) -> peach | Total Weight: 1.00 | Degree of Separation: 2
+pantry (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 2.00) <- peach | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 2.69) -> peach | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 2.00) <- peach | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 4.90) <- grape (RelatedTo | Weight: 3.26) -> fruit (RelatedTo | Weight: 2.69) -> peach | Total Weight: 4.90 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 4.90) <- grape (RelatedTo | Weight: 3.26) -> fruit (IsA | Weight: 2.00) <- peach | Total Weight: 4.90 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 4.47) <- pantry (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 2.69) -> peach | Total Weight: 4.47 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 4.47) <- pantry (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 2.00) <- peach | Total Weight: 4.47 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 2.69) -> peach | Total Weight: 4.47 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 1.00) <- fruit (IsA | Weight: 2.00) <- peach | Total Weight: 4.47 | Degree of Separation: 3
+
+Locations for coin:
+office (AtLocation | Weight: 1.00) <- money (RelatedTo | Weight: 5.40) -> coin | Total Weight: 1.00 | Degree of Separation: 2
+garden (AtLocation | Weight: 1.00) <- fountain (AtLocation | Weight: 1.00) <- coin | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 5.66) <- telephone (RelatedTo | Weight: 1.00) -> coinbox/n (RelatedTo | Weight: 1.00) -> coin | Total Weight: 5.66 | Degree of Separation: 3
+office (AtLocation | Weight: 5.66) <- telephone (RelatedTo | Weight: 1.00) -> cardphone/n (RelatedTo | Weight: 1.00) -> coin | Total Weight: 5.66 | Degree of Separation: 3
+office (AtLocation | Weight: 5.66) <- telephone (RelatedTo | Weight: 1.00) -> minute/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> coin | Total Weight: 5.66 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 9.10) -> round (RelatedTo | Weight: 2.77) -> coin | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 5.12) -> circle (RelatedTo | Weight: 1.35) -> coin | Total Weight: 5.29 | Degree of Separation: 3
+office (AtLocation | Weight: 4.90) <- computer (RelatedTo | Weight: 1.00) -> hub/n (RelatedTo | Weight: 1.00) -> coin | Total Weight: 4.90 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 3.46) <- change (AtLocation | Weight: 1.00) <- coin | Total Weight: 4.47 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 3.46) <- change (RelatedTo | Weight: 2.78) -> coin | Total Weight: 4.47 | Degree of Separation: 3
+
+Locations for teddy_bear:
+bedroom (AtLocation | Weight: 1.00) <- shelf (AtLocation | Weight: 2.00) <- teddy_bear | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 2.62) -> home (AtLocation | Weight: 1.00) <- teddy_bear | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (RelatedTo | Weight: 1.92) -> bed (AtLocation | Weight: 1.00) <- teddy_bear | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 4.90) <- shelf (AtLocation | Weight: 2.00) <- teddy_bear | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 4.00) <- blanket (RelatedTo | Weight: 1.55) -> bed (AtLocation | Weight: 1.00) <- teddy_bear | Total Weight: 4.00 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 4.00) <- blanket (RelatedTo | Weight: 1.14) -> bed (AtLocation | Weight: 1.00) <- teddy_bear | Total Weight: 4.00 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 4.00) <- pillow (RelatedTo | Weight: 4.59) -> bed (AtLocation | Weight: 1.00) <- teddy_bear | Total Weight: 4.00 | Degree of Separation: 3
+dining_room (AtLocation | Weight: 4.00) <- table (RelatedTo | Weight: 1.92) -> bed (AtLocation | Weight: 1.00) <- teddy_bear | Total Weight: 4.00 | Degree of Separation: 3
+office (AtLocation | Weight: 2.00) <- client (RelatedTo | Weight: 1.00) -> gonk/n (RelatedTo | Weight: 1.00) -> teddy_bear | Total Weight: 2.00 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.00) <- duvet (RelatedTo | Weight: 1.34) -> bed (AtLocation | Weight: 1.00) <- teddy_bear | Total Weight: 2.00 | Degree of Separation: 3
+
+Locations for muffin:
+pantry (AtLocation | Weight: 1.00) <- cupboard (AtLocation | Weight: 1.00) <- muffin | Total Weight: 1.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.05) -> cupboard (AtLocation | Weight: 1.00) <- muffin | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 4.47) <- pantry (AtLocation | Weight: 1.00) <- cupboard (AtLocation | Weight: 1.00) <- muffin | Total Weight: 4.47 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 3.46) <- dish (RelatedTo | Weight: 1.00) -> muffineer/n (RelatedTo | Weight: 1.00) -> muffin | Total Weight: 3.46 | Degree of Separation: 3
+pantry (AtLocation | Weight: 2.00) <- bread (RelatedTo | Weight: 1.00) -> teacake/n (RelatedTo | Weight: 1.00) -> muffin | Total Weight: 2.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- cinnamon (RelatedTo | Weight: 1.00) -> teacake/n (RelatedTo | Weight: 1.00) -> muffin | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- window (RelatedTo | Weight: 1.00) -> popover/n (RelatedTo | Weight: 1.00) -> muffin | Total Weight: 1.00 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 1.00) <- window (RelatedTo | Weight: 1.00) -> popover/n (RelatedTo | Weight: 1.00) -> muffin | Total Weight: 1.00 | Degree of Separation: 3
+bedroom (Synonym | Weight: 1.00) -> wardrobe/n (RelatedTo | Weight: 1.00) -> cupboard (AtLocation | Weight: 1.00) <- muffin | Total Weight: 1.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 1.00) <- dish (RelatedTo | Weight: 1.00) -> muffineer/n (RelatedTo | Weight: 1.00) -> muffin | Total Weight: 1.00 | Degree of Separation: 3
+
+Locations for glove:
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> tassel/n (RelatedTo | Weight: 1.00) -> glove | Total Weight: 5.29 | Degree of Separation: 3
+office (UsedFor | Weight: 4.00) -> work (RelatedTo | Weight: 1.00) -> monkey_glove/n (RelatedTo | Weight: 1.00) -> glove | Total Weight: 4.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 3.40) -> sock (RelatedTo | Weight: 2.15) -> glove | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> tassel/n (RelatedTo | Weight: 1.00) -> glove | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- glass (RelatedTo | Weight: 1.00) -> finger/n (RelatedTo | Weight: 1.00) -> glove | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 3.40) -> sock (RelatedTo | Weight: 2.15) -> glove | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> tassel/n (RelatedTo | Weight: 1.00) -> glove | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.00) <- duvet (RelatedTo | Weight: 1.00) -> inner/n (RelatedTo | Weight: 1.00) -> glove | Total Weight: 2.00 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.00) <- book (RelatedTo | Weight: 1.00) -> tassel/n (RelatedTo | Weight: 1.00) -> glove | Total Weight: 2.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- oil (RelatedTo | Weight: 1.00) -> wash_leather/n (RelatedTo | Weight: 1.00) -> glove | Total Weight: 1.00 | Degree of Separation: 3
+
+Locations for mobile_phone:
+office (AtLocation | Weight: 5.66) <- telephone (IsA | Weight: 1.00) <- mobile_phone | Total Weight: 5.66 | Degree of Separation: 2
+office (AtLocation | Weight: 4.90) <- computer (IsA | Weight: 1.00) <- mobile_phone | Total Weight: 4.90 | Degree of Separation: 2
+office (AtLocation | Weight: 2.00) <- phone (IsA | Weight: 1.00) <- mobile_phone | Total Weight: 2.00 | Degree of Separation: 2
+office (AtLocation | Weight: 5.66) <- telephone (RelatedTo | Weight: 1.00) -> pocketphone/n (RelatedTo | Weight: 1.00) -> mobile_phone | Total Weight: 5.66 | Degree of Separation: 3
+office (AtLocation | Weight: 5.66) <- telephone (RelatedTo | Weight: 1.00) -> ringtone/n (RelatedTo | Weight: 1.00) -> mobile_phone | Total Weight: 5.66 | Degree of Separation: 3
+office (AtLocation | Weight: 5.66) <- telephone (RelatedTo | Weight: 1.00) -> cell_phone/n (Synonym | Weight: 1.00) -> mobile_phone | Total Weight: 5.66 | Degree of Separation: 3
+office (AtLocation | Weight: 5.66) <- telephone (RelatedTo | Weight: 1.00) -> phone (IsA | Weight: 1.00) <- mobile_phone | Total Weight: 5.66 | Degree of Separation: 3
+office (AtLocation | Weight: 5.66) <- telephone (IsA | Weight: 1.00) <- phone (IsA | Weight: 1.00) <- mobile_phone | Total Weight: 5.66 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 1.00) -> keyguard/n (RelatedTo | Weight: 1.00) -> mobile_phone | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 4.90) <- computer (IsA | Weight: 1.00) <- mobile_phone | Total Weight: 5.29 | Degree of Separation: 3
+
+Locations for oyster:
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 1.00) -> stool/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> oyster | Total Weight: 8.49 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- mouse (RelatedTo | Weight: 1.00) -> mussel (RelatedTo | Weight: 1.00) -> oyster | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- chair (RelatedTo | Weight: 1.00) -> stool/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> oyster | Total Weight: 2.83 | Degree of Separation: 3
+living_room (AtLocation | Weight: 2.83) <- chair (RelatedTo | Weight: 1.00) -> stool/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> oyster | Total Weight: 2.83 | Degree of Separation: 3
+pantry (AtLocation | Weight: 2.83) <- mouse (RelatedTo | Weight: 1.00) -> mussel (RelatedTo | Weight: 1.00) -> oyster | Total Weight: 2.83 | Degree of Separation: 3
+garden (AtLocation | Weight: 2.83) <- mouse (RelatedTo | Weight: 1.00) -> mussel (RelatedTo | Weight: 1.00) -> oyster | Total Weight: 2.83 | Degree of Separation: 3
+office (AtLocation | Weight: 2.00) <- crab (RelatedTo | Weight: 1.00) -> oyster_crab/n (RelatedTo | Weight: 1.00) -> oyster | Total Weight: 2.00 | Degree of Separation: 3
+office (AtLocation | Weight: 2.00) <- clock (RelatedTo | Weight: 1.00) -> strike/v (RelatedTo | Weight: 1.00) -> oyster | Total Weight: 2.00 | Degree of Separation: 3
+office (AtLocation | Weight: 2.00) <- mouse (RelatedTo | Weight: 1.00) -> mussel (RelatedTo | Weight: 1.00) -> oyster | Total Weight: 2.00 | Degree of Separation: 3
+pantry (AtLocation | Weight: 2.00) <- bread (RelatedTo | Weight: 1.00) -> scalloped_oyster/n (RelatedTo | Weight: 1.00) -> oyster | Total Weight: 2.00 | Degree of Separation: 3
+
+Locations for boot:
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 2.00) <- foot (AtLocation | Weight: 2.00) <- boot | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 7.48) <- shoe (IsA | Weight: 1.00) <- boot | Total Weight: 5.29 | Degree of Separation: 3
+office (AtLocation | Weight: 4.90) <- computer (RelatedTo | Weight: 1.00) -> multiboot/a (RelatedTo | Weight: 1.00) -> boot | Total Weight: 4.90 | Degree of Separation: 3
+office (AtLocation | Weight: 4.90) <- computer (RelatedTo | Weight: 1.00) -> boot_storm/n (RelatedTo | Weight: 1.00) -> boot | Total Weight: 4.90 | Degree of Separation: 3
+office (AtLocation | Weight: 4.90) <- computer (RelatedTo | Weight: 1.00) -> dual_boot/a (RelatedTo | Weight: 1.00) -> boot | Total Weight: 4.90 | Degree of Separation: 3
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 2.00) <- foot (AtLocation | Weight: 2.00) <- boot | Total Weight: 4.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> pannuscorium/n (RelatedTo | Weight: 1.00) -> boot | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> pannuscorium/n (RelatedTo | Weight: 1.00) -> boot | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- chest (RelatedTo | Weight: 1.00) -> trunk/n (RelatedTo | Weight: 1.00) -> boot | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- chest (RelatedTo | Weight: 1.00) -> trunk/n (Synonym | Weight: 2.00) -> boot | Total Weight: 2.83 | Degree of Separation: 3
+
+Locations for stapler:
+office (UsedFor | Weight: 4.00) -> work (AtLocation | Weight: 2.00) <- stapler | Total Weight: 4.00 | Degree of Separation: 2
+office (AtLocation | Weight: 2.00) <- desk_drawer (AtLocation | Weight: 3.46) <- stapler | Total Weight: 2.00 | Degree of Separation: 2
+office (AtLocation | Weight: 1.00) <- work (AtLocation | Weight: 2.00) <- stapler | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- desk (AtLocation | Weight: 10.58) <- stapler | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 10.39) <- computers (UsedFor | Weight: 6.93) -> work (AtLocation | Weight: 2.00) <- stapler | Total Weight: 10.39 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 2.85) -> desk (AtLocation | Weight: 10.58) <- stapler | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 1.67) -> device (IsA | Weight: 2.00) <- stapler | Total Weight: 8.49 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (RelatedTo | Weight: 7.90) -> desk (AtLocation | Weight: 10.58) <- stapler | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (RelatedTo | Weight: 3.63) -> desk (AtLocation | Weight: 10.58) <- stapler | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (IsA | Weight: 2.83) <- desk (AtLocation | Weight: 10.58) <- stapler | Total Weight: 5.29 | Degree of Separation: 3
+
+Locations for artichoke:
+kitchen (AtLocation | Weight: 3.46) <- dish (RelatedTo | Weight: 1.00) -> eggs_sardou/n (RelatedTo | Weight: 1.00) -> artichoke | Total Weight: 3.46 | Degree of Separation: 3
+pantry (AtLocation | Weight: 1.00) <- dish (RelatedTo | Weight: 1.00) -> eggs_sardou/n (RelatedTo | Weight: 1.00) -> artichoke | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 5.21) -> taste (RelatedTo | Weight: 1.00) -> cynarine/n (RelatedTo | Weight: 1.00) -> artichoke | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 2.83) <- ham (RelatedTo | Weight: 1.00) -> capricciosa/n (RelatedTo | Weight: 1.00) -> artichoke | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- vegetable (RelatedTo | Weight: 1.00) -> cardoon/n (RelatedTo | Weight: 1.00) -> artichoke | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- pizza (RelatedTo | Weight: 1.00) -> capricciosa/n (RelatedTo | Weight: 1.00) -> artichoke | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 6.93) <- sink (AtLocation | Weight: 1.00) <- dish (RelatedTo | Weight: 1.00) -> eggs_sardou/n (RelatedTo | Weight: 1.00) -> artichoke | Total Weight: 6.93 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 2.00) <- pizza (RelatedTo | Weight: 1.00) -> capricciosa/n (RelatedTo | Weight: 1.00) -> artichoke | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 1.00) <- edible (RelatedTo | Weight: 1.00) -> artichoke_heart/n (RelatedTo | Weight: 1.00) -> artichoke | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- plate (RelatedTo | Weight: 11.48) -> dish (RelatedTo | Weight: 1.00) -> eggs_sardou/n (RelatedTo | Weight: 1.00) -> artichoke | Total Weight: 5.29 | Degree of Separation: 4
+
+Locations for handbag:
+bedroom (AtLocation | Weight: 4.47) <- wardrobe (AtLocation | Weight: 1.00) <- handbag | Total Weight: 4.47 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 1.00) <- wardrobe (AtLocation | Weight: 1.00) <- handbag | Total Weight: 5.29 | Degree of Separation: 3
+pantry (AtLocation | Weight: 3.46) <- container (AtLocation | Weight: 1.00) <- shop (AtLocation | Weight: 1.00) <- handbag | Total Weight: 3.46 | Degree of Separation: 3
+pantry (AtLocation | Weight: 3.46) <- container (RelatedTo | Weight: 1.00) -> bag/n (RelatedTo | Weight: 1.00) -> handbag | Total Weight: 3.46 | Degree of Separation: 3
+pantry (AtLocation | Weight: 3.46) <- container (RelatedTo | Weight: 1.00) -> bag/n (Synonym | Weight: 1.00) -> handbag | Total Weight: 3.46 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- counter (UsedFor | Weight: 2.00) -> store (AtLocation | Weight: 2.00) <- handbag | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> bag/n (RelatedTo | Weight: 1.00) -> handbag | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> bag/n (Synonym | Weight: 1.00) -> handbag | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> bag/n (RelatedTo | Weight: 1.00) -> handbag | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> bag/n (Synonym | Weight: 1.00) -> handbag | Total Weight: 2.83 | Degree of Separation: 3
+
+Locations for skirt:
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 2.00) <- skirt | Total Weight: 5.29 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 10.00) <- clothing (RelatedTo | Weight: 1.31) -> skirt | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 1.00) <- dress (RelatedTo | Weight: 8.11) -> skirt | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 1.00) <- dress (RelatedTo | Weight: 1.09) -> skirt | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 1.00) <- dress (IsA | Weight: 1.00) <- skirt | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (UsedFor | Weight: 2.83) -> clothing (RelatedTo | Weight: 1.31) -> skirt | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.27) -> dress (RelatedTo | Weight: 8.11) -> skirt | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.27) -> dress (RelatedTo | Weight: 1.09) -> skirt | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.27) -> dress (IsA | Weight: 1.00) <- skirt | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- cloth (UsedFor | Weight: 2.83) -> clothing (RelatedTo | Weight: 1.31) -> skirt | Total Weight: 2.83 | Degree of Separation: 3
+
+Locations for belt:
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 1.00) <- belt | Total Weight: 5.29 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 10.00) <- clothing (RelatedTo | Weight: 1.00) -> belt | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 1.00) <- pants (RelatedTo | Weight: 1.02) -> belt | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (UsedFor | Weight: 2.83) -> clothing (RelatedTo | Weight: 1.00) -> belt | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> sash/n/wikt/en_1 (Synonym | Weight: 1.00) -> belt | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- glass (RelatedTo | Weight: 1.00) -> lehr/n (RelatedTo | Weight: 1.00) -> belt | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- cloth (UsedFor | Weight: 2.83) -> clothing (RelatedTo | Weight: 1.00) -> belt | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> sash/n/wikt/en_1 (Synonym | Weight: 1.00) -> belt | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- bureau (UsedFor | Weight: 2.83) -> clothing (RelatedTo | Weight: 1.00) -> belt | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.00) <- cook (RelatedTo | Weight: 1.00) -> shifter/n (RelatedTo | Weight: 1.00) -> belt | Total Weight: 2.00 | Degree of Separation: 3
+
+Locations for shorts:
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 10.00) <- clothing (RelatedTo | Weight: 1.00) -> shorts | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (UsedFor | Weight: 2.83) -> clothing (RelatedTo | Weight: 1.00) -> shorts | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- cloth (UsedFor | Weight: 2.83) -> clothing (RelatedTo | Weight: 1.00) -> shorts | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- bureau (UsedFor | Weight: 2.83) -> clothing (RelatedTo | Weight: 1.00) -> shorts | Total Weight: 2.83 | Degree of Separation: 3
+pantry (AtLocation | Weight: 2.83) <- flour (RelatedTo | Weight: 1.00) -> canaille/n (RelatedTo | Weight: 1.00) -> shorts | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- flour (RelatedTo | Weight: 1.00) -> canaille/n (RelatedTo | Weight: 1.00) -> shorts | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- textile (UsedFor | Weight: 1.00) -> clothing (RelatedTo | Weight: 1.00) -> shorts | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 6.00) <- clothing (RelatedTo | Weight: 1.00) -> shorts | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- drawer (RelatedTo | Weight: 1.00) -> drawers/n/wikt/fr_1 (Synonym | Weight: 1.00) -> shorts | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- bureau (UsedFor | Weight: 2.83) -> clothing (RelatedTo | Weight: 1.00) -> shorts | Total Weight: 1.00 | Degree of Separation: 3
+
+Locations for scarf:
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 10.00) <- clothing (IsA | Weight: 1.00) <- scarf | Total Weight: 5.29 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 2.00) <- neckwear (IsA | Weight: 1.00) <- scarf | Total Weight: 5.29 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (UsedFor | Weight: 2.83) -> clothing (IsA | Weight: 1.00) <- scarf | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> gamucha/n (RelatedTo | Weight: 1.00) -> scarf | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> seter/n/wikt/en_3 (RelatedTo | Weight: 1.00) -> scarf | Total Weight: 2.83 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> dupatta/n (RelatedTo | Weight: 1.00) -> scarf | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- cloth (UsedFor | Weight: 2.83) -> clothing (IsA | Weight: 1.00) <- scarf | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> gamucha/n (RelatedTo | Weight: 1.00) -> scarf | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> seter/n/wikt/en_3 (RelatedTo | Weight: 1.00) -> scarf | Total Weight: 2.83 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 2.83) <- cloth (RelatedTo | Weight: 1.00) -> dupatta/n (RelatedTo | Weight: 1.00) -> scarf | Total Weight: 2.83 | Degree of Separation: 3
+
+Locations for remote_control:
+living_room (AtLocation | Weight: 2.83) <- television (AtLocation | Weight: 1.00) <- remote_control | Total Weight: 2.83 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- television (AtLocation | Weight: 1.00) <- remote_control | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 5.66) <- telephone (RelatedTo | Weight: 1.00) -> by_wire (RelatedTo | Weight: 1.00) -> remote_control | Total Weight: 5.66 | Degree of Separation: 3
+office (AtLocation | Weight: 4.90) <- computer (RelatedTo | Weight: 1.00) -> 10_foot_user_interface/n (RelatedTo | Weight: 1.00) -> remote_control | Total Weight: 4.90 | Degree of Separation: 3
+living_room (AtLocation | Weight: 2.83) <- television (RelatedTo | Weight: 1.00) -> channel_stopper/n (RelatedTo | Weight: 1.00) -> remote_control | Total Weight: 2.83 | Degree of Separation: 3
+living_room (AtLocation | Weight: 2.83) <- television (RelatedTo | Weight: 1.00) -> 10_foot_user_interface/n (RelatedTo | Weight: 1.00) -> remote_control | Total Weight: 2.83 | Degree of Separation: 3
+living_room (AtLocation | Weight: 2.83) <- television (RelatedTo | Weight: 1.00) -> channel_surf/v (RelatedTo | Weight: 2.00) -> remote_control | Total Weight: 2.83 | Degree of Separation: 3
+living_room (AtLocation | Weight: 2.83) <- television (RelatedTo | Weight: 1.00) -> zapper/n (RelatedTo | Weight: 1.00) -> remote_control | Total Weight: 2.83 | Degree of Separation: 3
+living_room (AtLocation | Weight: 2.83) <- television (RelatedTo | Weight: 1.00) -> channel_changer/n (RelatedTo | Weight: 1.00) -> remote_control | Total Weight: 2.83 | Degree of Separation: 3
+living_room (AtLocation | Weight: 2.83) <- television (RelatedTo | Weight: 1.00) -> zap/v (RelatedTo | Weight: 1.00) -> remote_control | Total Weight: 2.83 | Degree of Separation: 3
+
+Locations for doughnut:
+office (AtLocation | Weight: 2.00) <- coffee (RelatedTo | Weight: 1.00) -> timmy's/n (RelatedTo | Weight: 1.00) -> doughnut | Total Weight: 2.00 | Degree of Separation: 3
+garden (AtLocation | Weight: 2.00) <- cannabis (RelatedTo | Weight: 1.00) -> dutchie/n (RelatedTo | Weight: 1.00) -> doughnut | Total Weight: 2.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- sugar (RelatedTo | Weight: 1.00) -> bismarck/n (RelatedTo | Weight: 1.00) -> doughnut | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- window (RelatedTo | Weight: 2.81) -> hole (RelatedTo | Weight: 2.23) -> doughnut | Total Weight: 1.00 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 1.00) <- window (RelatedTo | Weight: 2.81) -> hole (RelatedTo | Weight: 2.23) -> doughnut | Total Weight: 1.00 | Degree of Separation: 3
+garden (AtLocation | Weight: 1.00) <- dirt (AtLocation | Weight: 1.00) <- hole (RelatedTo | Weight: 2.23) -> doughnut | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 2.71) -> sugar (RelatedTo | Weight: 1.00) -> bismarck/n (RelatedTo | Weight: 1.00) -> doughnut | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 2.32) -> apple (RelatedTo | Weight: 1.00) -> bismarck/n (RelatedTo | Weight: 1.00) -> doughnut | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.13) -> roll (IsA | Weight: 1.00) <- bagel (RelatedTo | Weight: 1.24) -> doughnut | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 5.66) <- chocolate (RelatedTo | Weight: 1.00) -> bismarck/n (RelatedTo | Weight: 1.00) -> doughnut | Total Weight: 7.21 | Degree of Separation: 4
+
+Locations for tablet_computer:
+office (AtLocation | Weight: 2.00) <- keyboard (RelatedTo | Weight: 1.00) -> laptop_computer/n (RelatedTo | Weight: 1.00) -> tablet_computer | Total Weight: 2.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- sugar (RelatedTo | Weight: 1.00) -> tablet/n (RelatedTo | Weight: 1.00) -> tablet_computer | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- milk (RelatedTo | Weight: 1.00) -> tablet/n (RelatedTo | Weight: 1.00) -> tablet_computer | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- notebook (Synonym | Weight: 1.00) -> laptop_computer/n (RelatedTo | Weight: 1.00) -> tablet_computer | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- pad (RelatedTo | Weight: 1.00) -> tablet/n (RelatedTo | Weight: 1.00) -> tablet_computer | Total Weight: 1.00 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 1.00) <- sheet (RelatedTo | Weight: 1.00) -> tablet/n (RelatedTo | Weight: 1.00) -> tablet_computer | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 1.67) -> device (RelatedTo | Weight: 1.00) -> fondleslab/n (RelatedTo | Weight: 1.00) -> tablet_computer | Total Weight: 8.49 | Degree of Separation: 4
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 1.67) -> device (RelatedTo | Weight: 1.00) -> powerbank/n (RelatedTo | Weight: 1.00) -> tablet_computer | Total Weight: 8.49 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 2.71) -> sugar (RelatedTo | Weight: 1.00) -> tablet/n (RelatedTo | Weight: 1.00) -> tablet_computer | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.47) -> milk (RelatedTo | Weight: 1.00) -> tablet/n (RelatedTo | Weight: 1.00) -> tablet_computer | Total Weight: 7.21 | Degree of Separation: 4
+
+Locations for pretzel:
+pantry (AtLocation | Weight: 2.83) <- flour (RelatedTo | Weight: 1.00) -> imarti/n (RelatedTo | Weight: 1.00) -> pretzel | Total Weight: 2.83 | Degree of Separation: 3
+pantry (AtLocation | Weight: 2.00) <- peanut_butter (RelatedTo | Weight: 1.00) -> pretzel_pillow/n (RelatedTo | Weight: 1.00) -> pretzel | Total Weight: 2.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- sugar (RelatedTo | Weight: 1.00) -> imarti/n (RelatedTo | Weight: 1.00) -> pretzel | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- flour (RelatedTo | Weight: 1.00) -> imarti/n (RelatedTo | Weight: 1.00) -> pretzel | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 2.71) -> sugar (RelatedTo | Weight: 1.00) -> imarti/n (RelatedTo | Weight: 1.00) -> pretzel | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 6.32) <- cheese (RelatedTo | Weight: 1.00) -> pretzel_pillow/n (RelatedTo | Weight: 1.00) -> pretzel | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 2.00) <- peanut_butter (RelatedTo | Weight: 1.00) -> pretzel_pillow/n (RelatedTo | Weight: 1.00) -> pretzel | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- plate (AtLocation | Weight: 2.00) <- cheese (RelatedTo | Weight: 1.00) -> pretzel_pillow/n (RelatedTo | Weight: 1.00) -> pretzel | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 4.47) <- pantry (AtLocation | Weight: 2.83) <- flour (RelatedTo | Weight: 1.00) -> imarti/n (RelatedTo | Weight: 1.00) -> pretzel | Total Weight: 4.47 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 4.47) <- pantry (AtLocation | Weight: 2.00) <- peanut_butter (RelatedTo | Weight: 1.00) -> pretzel_pillow/n (RelatedTo | Weight: 1.00) -> pretzel | Total Weight: 4.47 | Degree of Separation: 4
+
+Locations for balloon:
+bedroom (AtLocation | Weight: 5.29) <- closet (AtLocation | Weight: 2.00) <- ball (RelatedTo | Weight: 1.00) -> balloon | Total Weight: 5.29 | Degree of Separation: 3
+pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 1.00) <- air (AtLocation | Weight: 1.00) <- balloon | Total Weight: 4.47 | Degree of Separation: 3
+office (AtLocation | Weight: 2.00) <- desk_drawer (AtLocation | Weight: 1.00) <- envelope (IsA | Weight: 1.00) <- balloon | Total Weight: 2.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- basket (RelatedTo | Weight: 1.19) -> ball (RelatedTo | Weight: 1.00) -> balloon | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 2.83) <- envelope (IsA | Weight: 1.00) <- balloon | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- sack (AtLocation | Weight: 1.00) <- ball (RelatedTo | Weight: 1.00) -> balloon | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- basket (RelatedTo | Weight: 1.19) -> ball (RelatedTo | Weight: 1.00) -> balloon | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- number (RelatedTo | Weight: 1.00) -> balloon_animal/n (RelatedTo | Weight: 1.00) -> balloon | Total Weight: 1.00 | Degree of Separation: 3
+child's_bedroom (AtLocation | Weight: 1.00) <- toy (RelatedTo | Weight: 7.62) -> ball (RelatedTo | Weight: 1.00) -> balloon | Total Weight: 1.00 | Degree of Separation: 3
+child's_bedroom (AtLocation | Weight: 1.00) <- toy (RelatedTo | Weight: 2.00) -> ball (RelatedTo | Weight: 1.00) -> balloon | Total Weight: 1.00 | Degree of Separation: 3
+
+Locations for plastic_bag:
+kitchen (AtLocation | Weight: 7.21) <- food (AtLocation | Weight: 1.00) <- freezer (RelatedTo | Weight: 1.00) -> freezer_bag/n (RelatedTo | Weight: 1.00) -> plastic_bag | Total Weight: 7.21 | Degree of Separation: 4
+bedroom (AtLocation | Weight: 5.29) <- closet (RelatedTo | Weight: 1.58) -> storage (RelatedTo | Weight: 1.00) -> freezer_bag/n (RelatedTo | Weight: 1.00) -> plastic_bag | Total Weight: 5.29 | Degree of Separation: 4
+office (AtLocation | Weight: 4.90) <- cubicle (UsedFor | Weight: 2.00) -> storage (RelatedTo | Weight: 1.00) -> freezer_bag/n (RelatedTo | Weight: 1.00) -> plastic_bag | Total Weight: 4.90 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 4.47) <- icebox (RelatedTo | Weight: 1.00) -> freezer (RelatedTo | Weight: 1.00) -> freezer_bag/n (RelatedTo | Weight: 1.00) -> plastic_bag | Total Weight: 4.47 | Degree of Separation: 4
+pantry (AtLocation | Weight: 4.47) <- jar (UsedFor | Weight: 1.00) -> storage (RelatedTo | Weight: 1.00) -> freezer_bag/n (RelatedTo | Weight: 1.00) -> plastic_bag | Total Weight: 4.47 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 4.00) <- cabinets (UsedFor | Weight: 2.00) -> storage (RelatedTo | Weight: 1.00) -> freezer_bag/n (RelatedTo | Weight: 1.00) -> plastic_bag | Total Weight: 4.00 | Degree of Separation: 4
+pantry (AtLocation | Weight: 4.00) <- food (AtLocation | Weight: 1.00) <- freezer (RelatedTo | Weight: 1.00) -> freezer_bag/n (RelatedTo | Weight: 1.00) -> plastic_bag | Total Weight: 4.00 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 2.83) <- fridge (RelatedTo | Weight: 1.00) -> freezer (RelatedTo | Weight: 1.00) -> freezer_bag/n (RelatedTo | Weight: 1.00) -> plastic_bag | Total Weight: 2.83 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 2.83) <- container_cup (UsedFor | Weight: 1.00) -> storage (RelatedTo | Weight: 1.00) -> freezer_bag/n (RelatedTo | Weight: 1.00) -> plastic_bag | Total Weight: 2.83 | Degree of Separation: 4
+bedroom (AtLocation | Weight: 2.83) <- bureau (UsedFor | Weight: 2.83) -> storage (RelatedTo | Weight: 1.00) -> freezer_bag/n (RelatedTo | Weight: 1.00) -> plastic_bag | Total Weight: 2.83 | Degree of Separation: 4
+
+Locations for chopsticks:
+pantry (AtLocation | Weight: 1.00) <- rice (RelatedTo | Weight: 3.32) -> asia (AtLocation | Weight: 1.00) <- chopsticks | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 8.97) -> rice (RelatedTo | Weight: 3.32) -> asia (AtLocation | Weight: 1.00) <- chopsticks | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.00) -> milkfish/n (RelatedTo | Weight: 1.00) -> asia (AtLocation | Weight: 1.00) <- chopsticks | Total Weight: 7.21 | Degree of Separation: 4
+garden (AtLocation | Weight: 6.32) <- lizard (RelatedTo | Weight: 1.00) -> tokay/n/wikt/en_2 (RelatedTo | Weight: 1.00) -> asia (AtLocation | Weight: 1.00) <- chopsticks | Total Weight: 6.32 | Degree of Separation: 4
+garden (AtLocation | Weight: 6.32) <- lizard (RelatedTo | Weight: 1.00) -> flying_dragon/n (RelatedTo | Weight: 1.00) -> asia (AtLocation | Weight: 1.00) <- chopsticks | Total Weight: 6.32 | Degree of Separation: 4
+garden (AtLocation | Weight: 6.32) <- lizard (RelatedTo | Weight: 1.00) -> red_backed_shrike/n (RelatedTo | Weight: 1.00) -> asia (AtLocation | Weight: 1.00) <- chopsticks | Total Weight: 6.32 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 4.47) <- pantry (AtLocation | Weight: 1.00) <- rice (RelatedTo | Weight: 3.32) -> asia (AtLocation | Weight: 1.00) <- chopsticks | Total Weight: 4.47 | Degree of Separation: 4
+garden (AtLocation | Weight: 4.47) <- snake (RelatedTo | Weight: 1.00) -> habu/n (RelatedTo | Weight: 1.00) -> asia (AtLocation | Weight: 1.00) <- chopsticks | Total Weight: 4.47 | Degree of Separation: 4
+garden (AtLocation | Weight: 4.47) <- snake (RelatedTo | Weight: 1.00) -> pit_viper/n (RelatedTo | Weight: 1.00) -> asia (AtLocation | Weight: 1.00) <- chopsticks | Total Weight: 4.47 | Degree of Separation: 4
+pantry (AtLocation | Weight: 4.00) <- food (RelatedTo | Weight: 8.97) -> rice (RelatedTo | Weight: 3.32) -> asia (AtLocation | Weight: 1.00) <- chopsticks | Total Weight: 4.00 | Degree of Separation: 4
+
+Locations for drinking_straw:
+pantry (AtLocation | Weight: 1.00) <- cereal (RelatedTo | Weight: 1.00) -> straw/n (RelatedTo | Weight: 1.00) -> drinking_straw | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 1.35) -> cereal (RelatedTo | Weight: 1.00) -> straw/n (RelatedTo | Weight: 1.00) -> drinking_straw | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 7.21) <- food (IsA | Weight: 1.00) <- cereal (RelatedTo | Weight: 1.00) -> straw/n (RelatedTo | Weight: 1.00) -> drinking_straw | Total Weight: 7.21 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 4.47) <- pantry (AtLocation | Weight: 1.00) <- cereal (RelatedTo | Weight: 1.00) -> straw/n (RelatedTo | Weight: 1.00) -> drinking_straw | Total Weight: 4.47 | Degree of Separation: 4
+pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 1.00) <- liquid (RelatedTo | Weight: 1.00) -> crazy_straw/n (RelatedTo | Weight: 1.00) -> drinking_straw | Total Weight: 4.47 | Degree of Separation: 4
+pantry (AtLocation | Weight: 4.00) <- food (RelatedTo | Weight: 1.35) -> cereal (RelatedTo | Weight: 1.00) -> straw/n (RelatedTo | Weight: 1.00) -> drinking_straw | Total Weight: 4.00 | Degree of Separation: 4
+pantry (AtLocation | Weight: 4.00) <- food (IsA | Weight: 1.00) <- cereal (RelatedTo | Weight: 1.00) -> straw/n (RelatedTo | Weight: 1.00) -> drinking_straw | Total Weight: 4.00 | Degree of Separation: 4
+pantry (AtLocation | Weight: 3.46) <- container (AtLocation | Weight: 2.00) <- liquid (RelatedTo | Weight: 1.00) -> crazy_straw/n (RelatedTo | Weight: 1.00) -> drinking_straw | Total Weight: 3.46 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 2.83) <- fridge (AtLocation | Weight: 1.00) <- cereal (RelatedTo | Weight: 1.00) -> straw/n (RelatedTo | Weight: 1.00) -> drinking_straw | Total Weight: 2.83 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 2.83) <- glass (RelatedTo | Weight: 1.13) -> liquid (RelatedTo | Weight: 1.00) -> crazy_straw/n (RelatedTo | Weight: 1.00) -> drinking_straw | Total Weight: 2.83 | Degree of Separation: 4
+
+Locations for swimwear:
+bedroom (AtLocation | Weight: 1.00) <- radio (RelatedTo | Weight: 1.00) -> jammer/n (RelatedTo | Weight: 1.00) -> swimwear | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 1.67) -> device (RelatedTo | Weight: 1.00) -> jammer/n (RelatedTo | Weight: 1.00) -> swimwear | Total Weight: 8.49 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- mouse (UsedFor | Weight: 2.83) -> surfing (RelatedTo | Weight: 1.00) -> boardshorts/n (RelatedTo | Weight: 1.00) -> swimwear | Total Weight: 5.29 | Degree of Separation: 4
+pantry (AtLocation | Weight: 4.47) <- jar (AtLocation | Weight: 4.00) <- jam (RelatedTo | Weight: 1.00) -> jammer/n (RelatedTo | Weight: 1.00) -> swimwear | Total Weight: 4.47 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 2.83) <- chair (RelatedTo | Weight: 1.67) -> device (RelatedTo | Weight: 1.00) -> jammer/n (RelatedTo | Weight: 1.00) -> swimwear | Total Weight: 2.83 | Degree of Separation: 4
+living_room (AtLocation | Weight: 2.83) <- chair (RelatedTo | Weight: 1.67) -> device (RelatedTo | Weight: 1.00) -> jammer/n (RelatedTo | Weight: 1.00) -> swimwear | Total Weight: 2.83 | Degree of Separation: 4
+pantry (AtLocation | Weight: 2.83) <- mouse (UsedFor | Weight: 2.83) -> surfing (RelatedTo | Weight: 1.00) -> boardshorts/n (RelatedTo | Weight: 1.00) -> swimwear | Total Weight: 2.83 | Degree of Separation: 4
+garden (AtLocation | Weight: 2.83) <- mouse (UsedFor | Weight: 2.83) -> surfing (RelatedTo | Weight: 1.00) -> boardshorts/n (RelatedTo | Weight: 1.00) -> swimwear | Total Weight: 2.83 | Degree of Separation: 4
+office (AtLocation | Weight: 2.00) <- machine (RelatedTo | Weight: 1.90) -> device (RelatedTo | Weight: 1.00) -> jammer/n (RelatedTo | Weight: 1.00) -> swimwear | Total Weight: 2.00 | Degree of Separation: 4
+office (AtLocation | Weight: 2.00) <- clock (RelatedTo | Weight: 3.12) -> device (RelatedTo | Weight: 1.00) -> jammer/n (RelatedTo | Weight: 1.00) -> swimwear | Total Weight: 2.00 | Degree of Separation: 4
+
+Locations for computer_mouse:
+office (AtLocation | Weight: 4.90) <- computer (RelatedTo | Weight: 1.00) -> desktop (AtLocation | Weight: 1.00) <- computer_mouse | Total Weight: 4.90 | Degree of Separation: 3
+bedroom (AtLocation | Weight: 1.00) <- desk (AtLocation | Weight: 2.00) <- mouse_pad (AtLocation | Weight: 1.00) <- computer_mouse | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 2.85) -> desk (AtLocation | Weight: 2.00) <- mouse_pad (AtLocation | Weight: 1.00) <- computer_mouse | Total Weight: 8.49 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 4.90) <- computer (RelatedTo | Weight: 1.00) -> desktop (AtLocation | Weight: 1.00) <- computer_mouse | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- table (RelatedTo | Weight: 7.90) -> desk (AtLocation | Weight: 2.00) <- mouse_pad (AtLocation | Weight: 1.00) <- computer_mouse | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- table (RelatedTo | Weight: 3.63) -> desk (AtLocation | Weight: 2.00) <- mouse_pad (AtLocation | Weight: 1.00) <- computer_mouse | Total Weight: 5.29 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 5.29) <- table (IsA | Weight: 2.83) <- desk (AtLocation | Weight: 2.00) <- mouse_pad (AtLocation | Weight: 1.00) <- computer_mouse | Total Weight: 5.29 | Degree of Separation: 4
+office (AtLocation | Weight: 4.90) <- computer (RelatedTo | Weight: 3.83) -> desk (AtLocation | Weight: 2.00) <- mouse_pad (AtLocation | Weight: 1.00) <- computer_mouse | Total Weight: 4.90 | Degree of Separation: 4
+office (AtLocation | Weight: 4.90) <- computer (RelatedTo | Weight: 1.00) -> workstation/n (RelatedTo | Weight: 1.00) -> desktop (AtLocation | Weight: 1.00) <- computer_mouse | Total Weight: 4.90 | Degree of Separation: 4
+office (AtLocation | Weight: 4.90) <- computer (RelatedTo | Weight: 1.00) -> deskside/n (RelatedTo | Weight: 1.00) -> desktop (AtLocation | Weight: 1.00) <- computer_mouse | Total Weight: 4.90 | Degree of Separation: 4
+
+Locations for pencil_case:
+office (AtLocation | Weight: 7.21) <- pen (RelatedTo | Weight: 1.00) -> pencil_box/n (Synonym | Weight: 1.00) -> pencil_case | Total Weight: 7.21 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- stationery (RelatedTo | Weight: 1.00) -> pencil_holder/n (RelatedTo | Weight: 1.00) -> pencil_case | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- stationery (RelatedTo | Weight: 1.00) -> pencil_box/n (Synonym | Weight: 1.00) -> pencil_case | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- pencil (RelatedTo | Weight: 1.00) -> pencil_holder/n (RelatedTo | Weight: 1.00) -> pencil_case | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- pencil (RelatedTo | Weight: 1.00) -> pencil_box/n (Synonym | Weight: 1.00) -> pencil_case | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- correction_fluid (RelatedTo | Weight: 1.00) -> pencil_holder/n (RelatedTo | Weight: 1.00) -> pencil_case | Total Weight: 1.00 | Degree of Separation: 3
+office (AtLocation | Weight: 1.00) <- correction_fluid (RelatedTo | Weight: 1.00) -> pencil_box/n (Synonym | Weight: 1.00) -> pencil_case | Total Weight: 1.00 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 1.00) <- pen (RelatedTo | Weight: 1.00) -> pencil_box/n (Synonym | Weight: 1.00) -> pencil_case | Total Weight: 5.29 | Degree of Separation: 4
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 1.00) <- pen (RelatedTo | Weight: 1.00) -> pencil_box/n (Synonym | Weight: 1.00) -> pencil_case | Total Weight: 4.00 | Degree of Separation: 4
+pantry (AtLocation | Weight: 3.46) <- container (RelatedTo | Weight: 1.00) -> bag/n (RelatedTo | Weight: 1.00) -> backpack (AtLocation | Weight: 1.00) <- pencil_case | Total Weight: 3.46 | Degree of Separation: 4
+
+Locations for adhesive_tape:
+bedroom (AtLocation | Weight: 3.46) <- condom (RelatedTo | Weight: 1.00) -> durex/n (RelatedTo | Weight: 1.00) -> adhesive_tape | Total Weight: 3.46 | Degree of Separation: 3
+kitchen (AtLocation | Weight: 2.83) <- glass (RelatedTo | Weight: 4.85) -> transparent (RelatedTo | Weight: 1.00) -> scotch_tape/n (RelatedTo | Weight: 1.00) -> adhesive_tape | Total Weight: 2.83 | Degree of Separation: 4
+kitchen (AtLocation | Weight: 2.83) <- glass (RelatedTo | Weight: 4.85) -> transparent (RelatedTo | Weight: 1.00) -> scotch_tape/n (Synonym | Weight: 1.00) -> adhesive_tape | Total Weight: 2.83 | Degree of Separation: 4
+office (AtLocation | Weight: 2.00) <- record (RelatedTo | Weight: 3.29) -> tape (RelatedTo | Weight: 2.00) -> sellotape/n (RelatedTo | Weight: 2.00) -> adhesive_tape | Total Weight: 2.00 | Degree of Separation: 4
+office (AtLocation | Weight: 2.00) <- record (RelatedTo | Weight: 3.29) -> tape (RelatedTo | Weight: 1.00) -> scotch_tape/n (RelatedTo | Weight: 1.00) -> adhesive_tape | Total Weight: 2.00 | Degree of Separation: 4
+office (AtLocation | Weight: 2.00) <- record (RelatedTo | Weight: 3.29) -> tape (RelatedTo | Weight: 1.00) -> scotch_tape/n (Synonym | Weight: 1.00) -> adhesive_tape | Total Weight: 2.00 | Degree of Separation: 4
+office (AtLocation | Weight: 2.00) <- record (RelatedTo | Weight: 3.29) -> tape (RelatedTo | Weight: 1.00) -> durex/n (RelatedTo | Weight: 1.00) -> adhesive_tape | Total Weight: 2.00 | Degree of Separation: 4
+office (AtLocation | Weight: 2.00) <- record (RelatedTo | Weight: 3.29) -> tape (RelatedTo | Weight: 1.00) -> sticky_tape/n (RelatedTo | Weight: 1.00) -> adhesive_tape | Total Weight: 2.00 | Degree of Separation: 4
+office (AtLocation | Weight: 2.00) <- record (RelatedTo | Weight: 3.29) -> tape (RelatedTo | Weight: 1.00) -> sticky_tape/n (Synonym | Weight: 1.00) -> adhesive_tape | Total Weight: 2.00 | Degree of Separation: 4
+office (AtLocation | Weight: 2.00) <- desk_drawer (UsedFor | Weight: 1.00) -> tape (RelatedTo | Weight: 2.00) -> sellotape/n (RelatedTo | Weight: 2.00) -> adhesive_tape | Total Weight: 2.00 | Degree of Separation: 4
+
+Locations for roller_skates:
+office (AtLocation | Weight: 1.00) <- building (RelatedTo | Weight: 1.00) -> ice_rink/n (Synonym | Weight: 1.00) -> skating_rink (AtLocation | Weight: 1.00) <- roller_skates | Total Weight: 1.00 | Degree of Separation: 4

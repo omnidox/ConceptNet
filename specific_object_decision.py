@@ -15,14 +15,19 @@ OBJECTS = [
     'book', 'flower', 'candle', 'camera', 'remote_control'
 ]
 
-def find_object_locations(data):
+def find_specific_object_locations(data, target_object):
+    """
+    Returns the locations related to the target object.
+    """
+    if target_object not in OBJECTS:
+        return f"{target_object} is not in the OBJECTS list."
+
     object_locations = {}
 
     for key, paths_list in data.items():
         location, object_ = key.split(':')
-        
-        # If the object is in our OBJECTS list, process its paths
-        if object_ in OBJECTS:
+
+        if object_ == target_object:
             if object_ not in object_locations:
                 object_locations[object_] = []
 
@@ -31,8 +36,8 @@ def find_object_locations(data):
                 degree_of_separation = len(path)
                 object_locations[object_].append((path, weight, degree_of_separation))
 
-            # Prioritize the paths for each object by degree of separation and then by weight
-            object_locations[object_] = sorted(object_locations[object_], key=lambda x: (x[2], -x[1]))[:10]
+            # Prioritize the paths for the object by degree of separation and then by weight
+            object_locations[object_] = sorted(object_locations[object_], key=lambda x: (x[2], -x[1]))
 
     return object_locations
 
@@ -40,10 +45,13 @@ def find_object_locations(data):
 with open('paths_modified_3.json', 'r') as file:
     data = json.load(file)
 
-object_locations = find_object_locations(data)
+# Specify the target object here
+target_object = "high_heels"
+object_locations = find_specific_object_locations(data, target_object)
 
 # Write the selected paths to a file
-with open('object_locations.txt', 'w') as outfile:
+file_name = f"{target_object}_locations.txt"
+with open(file_name, 'w') as outfile:
     for object_, paths in object_locations.items():
         outfile.write(f"\nLocations for {object_}:\n")
         for path_info in paths:
@@ -58,4 +66,4 @@ with open('object_locations.txt', 'w') as outfile:
             readable_path = ''.join(readable_path_elements) + object_
             outfile.write(f"{readable_path} | Total Weight: {weight:.2f} | Degree of Separation: {degree_of_separation}\n")
 
-print("Generated file 'object_locations.txt'")
+print(f"Generated file '{file_name}'")
