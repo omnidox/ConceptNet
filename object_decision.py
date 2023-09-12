@@ -20,6 +20,9 @@ def find_object_locations(data):
 
     for key, paths_list in data.items():
         location, object_ = key.split(':')
+
+        # Extract the main object name from the object string
+        object_ = object_.split('/')[0]
         
         # If the object is in our OBJECTS list, process its paths
         if object_ in OBJECTS:
@@ -32,12 +35,12 @@ def find_object_locations(data):
                 object_locations[object_].append((path, weight, degree_of_separation))
 
             # Prioritize the paths for each object by degree of separation and then by weight
-            object_locations[object_] = sorted(object_locations[object_], key=lambda x: (x[2], -x[1]))[:10]
+            object_locations[object_] = sorted(object_locations[object_], key=lambda x: (x[2], -x[1]))[:20]
 
     return object_locations
 
 # Load the data
-with open('paths_modified_3.json', 'r') as file:
+with open('paths_modified_4.json', 'r') as file:
     data = json.load(file)
 
 object_locations = find_object_locations(data)

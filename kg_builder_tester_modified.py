@@ -3,6 +3,7 @@ from collections import deque, defaultdict
 import json
 import os
 import time
+import sys
 
 # Constants
 
@@ -153,11 +154,12 @@ def bfs_modified_with_pathwise_visited(start, max_degree=3):
                 elapsed_time = (time.time() - start_time)/60
                 print(f"Progress: Visited {len(global_visited)} unique nodes. Current location: {start}. Current degree: {degree_counter}. Elapsed time: {elapsed_time:.2f} minutes...")
 
-        return paths
+        return paths, True
+
 
     except KeyboardInterrupt:
         print("\\nUser interrupted the BFS traversal. Saving any necessary data...")
-        return paths
+        return paths, False
         # raise  # Propagate the exception upwards
 
 # Update the main function to call the new BFS function
@@ -166,11 +168,16 @@ def main():
     not_found_objects = set(OBJECTS)
 
     for location in LOCATIONS:
-        location_paths = bfs_modified_with_pathwise_visited(location)
+        location_paths, success = bfs_modified_with_pathwise_visited(location)
+
+
         for obj, obj_paths in location_paths.items():
             if obj in not_found_objects:
                 not_found_objects.remove(obj)
             all_paths[f"{location}:{obj}"] = obj_paths
+
+        if not success:
+            break
 
     output_file = "paths_modified_4.json"
     if os.path.exists(output_file):
@@ -183,7 +190,8 @@ def main():
     if not_found_objects:
         print(f"Objects not found: {', '.join(not_found_objects)}")
 
-    save_cache_to_file()
+    #uncomment the following line to save the cache to file
+    # save_cache_to_file()
 
     elapsed_time = (time.time() - start_time)/60
     print(f"Elapsed time: {elapsed_time:.2f} minutes...")

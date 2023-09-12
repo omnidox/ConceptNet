@@ -38,7 +38,7 @@ def prioritize_and_select_paths(data, prioritize_relations=False):
     return selected_paths
 
 # Load the data
-with open('paths_modified_3.json', 'r') as file:
+with open('paths_modified_4.json', 'r') as file:
     data = json.load(file)
 
 # Set prioritize_relations to False if you don't want to prioritize. Set to True to prioritize.

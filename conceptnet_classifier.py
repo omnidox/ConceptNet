@@ -39,7 +39,7 @@ def get_object_context(data, object_name):
         return f"No paths found for {object_name}", None, None, None
 
 # Load the data
-with open('paths_modified_3.json', 'r') as file:
+with open('paths_modified_4.json', 'r') as file:
     data = json.load(file)
 
 # Test
