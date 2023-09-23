@@ -33,7 +33,7 @@ def prioritize_and_select_paths(data, prioritize_relations=False):
         
         # Picking the top paths (up to 5 paths)
         if sorted_paths:
-            selected_paths[key] = sorted_paths[:5]
+            selected_paths[key] = sorted_paths[:3]
     
     return selected_paths
 
@@ -45,7 +45,7 @@ with open('paths_modified_4.json', 'r') as file:
 selected_paths = prioritize_and_select_paths(data, prioritize_relations=False)
 
 # Write the selected paths to a file
-with open('selected_paths.txt', 'w') as outfile:
+with open('selected_paths2.txt', 'w') as outfile:
     for key, paths in selected_paths.items():
         location, object_ = key.split(':')
         outfile.write(f"\nPaths from {location} to {object_}:\n")
