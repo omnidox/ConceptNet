@@ -26,8 +26,15 @@ def get_object_context(data, object_name, desired_contexts=None):
         if obj == object_name and loc in desired_contexts:
             relevant_paths.extend(paths_list)
 
-    # Exclude paths that have any edge labeled 'RelatedTo'
-    relevant_paths = [path for path in relevant_paths if not any(edge[1] == 'RelatedTo' for edge in path[0])]
+    # # Exclude paths that have any edge labeled 'RelatedTo'
+    # relevant_paths = [path for path in relevant_paths if not any(edge[1] == 'RelatedTo' for edge in path[0])]
+
+    # Calculate the average weight for each path
+    for i, (path, _) in enumerate(relevant_paths):  # Ignore the provided path weight
+        total_weight = sum(edge[2] for edge in path)
+        average_weight = total_weight / len(path)
+        relevant_paths[i] = (path, average_weight)
+
 
     # Sort the paths by degree of separation and then by weight
     sorted_paths = sorted(relevant_paths, key=lambda x: (len(x[0]), -x[1]))
@@ -64,7 +71,7 @@ context, path, weight, degree_of_separation = get_object_context(data, object_na
 print(f"The most relevant context for {object_name} is {context}.")
 if context and not context.startswith("No paths found"):
     print(f"Path: {path}")
-    print(f"Weight: {weight:.2f}")
+    print(f"Average_Weight: {weight:.2f}")
     print(f"Degree of Separation: {degree_of_separation}")
 else:
     print("No relevant paths found.")

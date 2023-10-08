@@ -22,20 +22,19 @@ def prioritize_and_select_paths(data, prioritize_relations=False):
     selected_paths = {}
     
     for key, paths_list in data.items():
-        # Filtering paths based on the presence of prioritized relations, if specified
-        if prioritize_relations:
-            filtered_paths = [path for path in paths_list if any(edge[1] in prioritized_relations for edge in path[0])]
-        else:
-            filtered_paths = paths_list
+        
+        # # Exclude paths that have any edge labeled 'RelatedTo'
+        # paths_list = [path for path in paths_list if not any(edge[1] == 'RelatedTo' for edge in path[0])]
         
         # Sorting the paths first by their length and then by their cumulative weight
-        sorted_paths = sorted(filtered_paths, key=lambda x: (len(x[0]), -x[1]))
+        sorted_paths = sorted(paths_list, key=lambda x: (len(x[0]), -x[1]))
         
         # Picking the top paths (up to 5 paths)
         if sorted_paths:
             selected_paths[key] = sorted_paths[:3]
     
     return selected_paths
+
 
 # Load the data
 with open('paths_modified_4.json', 'r') as file:
@@ -45,9 +44,14 @@ with open('paths_modified_4.json', 'r') as file:
 selected_paths = prioritize_and_select_paths(data, prioritize_relations=False)
 
 # Write the selected paths to a file
-with open('selected_paths2.txt', 'w') as outfile:
+with open('selected_paths3.txt', 'w') as outfile:
     for key, paths in selected_paths.items():
         location, object_ = key.split(':')
+
+        # Extract the main object name from the object_ string
+        object_ = object_.split('/')[0]
+
+
         outfile.write(f"\nPaths from {location} to {object_}:\n")
         for path in paths:
             readable_path_elements = []
@@ -61,7 +65,7 @@ with open('selected_paths2.txt', 'w') as outfile:
             outfile.write(f"{readable_path} | Total Path Weight: {path[1]:.2f}\n")
 
 # Find objects that were not included
-included_objects = set([key.split(':')[1] for key in selected_paths])
+included_objects = set([key.split(':')[1].split('/')[0] for key in selected_paths])
 not_included = [obj for obj in OBJECTS if obj not in included_objects]
 print("Objects not included in the generated file:")
 for obj in not_included:
