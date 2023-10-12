@@ -30,16 +30,23 @@ def find_object_locations(data):
                 object_locations[object_] = []
 
 
-            # # Exclude paths that have any edge labeled 'RelatedTo'
-            # paths_list = [path_info for path_info in paths_list if not any(edge[1] == 'RelatedTo' for edge in path_info[0])]
+            # Exclude paths that have any edge labeled 'Synonym'
+            paths_list = [path_info for path_info in paths_list if not any(edge[1] == 'Synonym' for edge in path_info[0])]
 
             # # Exclude paths that have any edge labeled 'RelatedTo' with a weight less than 2
             # paths_list = [path_info for path_info in paths_list if not any(edge[1] == 'RelatedTo' and edge[2] < 2 for edge in path_info[0])]
 
+            # Calculate the average weight for each path
+            for i, (path, _) in enumerate(paths_list):  # Ignore the provided path weight
+                total_weight = sum(edge[2] for edge in path)
+                average_weight = total_weight / len(path)
+                paths_list[i] = (path, average_weight)
+
             for path_info in paths_list:
-                path, weight = path_info
+                path, average_weight = path_info
                 degree_of_separation = len(path)
-                object_locations[object_].append((path, weight, degree_of_separation))
+                object_locations[object_].append((path, average_weight, degree_of_separation))
+
 
             # Prioritize the paths for each object by degree of separation and then by weight
             object_locations[object_] = sorted(object_locations[object_], key=lambda x: (x[2], -x[1]))[:20]
@@ -53,7 +60,10 @@ with open('paths_modified_4.json', 'r') as file:
 object_locations = find_object_locations(data)
 
 # Write the selected paths to a file
-with open('object_locations.txt', 'w') as outfile:
+
+filename = 'object_locations_avg2.txt'
+
+with open(filename, 'w') as outfile:
     for object_, paths in object_locations.items():
         outfile.write(f"\nLocations for {object_}:\n")
         for path_info in paths:
@@ -68,4 +78,4 @@ with open('object_locations.txt', 'w') as outfile:
             readable_path = ''.join(readable_path_elements) + object_
             outfile.write(f"{readable_path} | Total Weight: {weight:.2f} | Degree of Separation: {degree_of_separation}\n")
 
-print("Generated file 'object_locations.txt'")
+print(f"Generated file '{filename}'")
