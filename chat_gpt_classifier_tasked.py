@@ -1,7 +1,7 @@
 import openai
 import configparser
 
-def get_gpt_context(object_name, desired_contexts=[], task=None):
+def get_gpt_context(object_name, desired_contexts=[], tasks=[]):
     # Set up the API key
     config = configparser.ConfigParser()
     config.read('config.ini')
@@ -16,24 +16,29 @@ def get_gpt_context(object_name, desired_contexts=[], task=None):
     prompt = f"Which of the following contexts is the object '{object_name}' most likely associated with: {', '.join(desired_contexts)}? Please specify only the context as a response."
 
 
-    # Use the chat interface
-    response = openai.ChatCompletion.create(
 
-        # model="gpt-3.5-turbo",
-        model="gpt-4",
-
-
-        # Temp and top_p can be adjusted to control the model's output
-        # Used paprameters as outlined by the following paper: https://arxiv.org/pdf/2305.14078.pdf
-
-        
-        temperature=0.6,  # Adjusts the randomness of the output
-        top_p=0.9,  # Adjusts the nucleus sampling
-
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
+    # Determine the system message based on tasks
+    if tasks:
+        task_str = " and ".join(tasks)
+        messages = [
+            {"role": "system", "content": f"You are a helpful {task_str} assistant robot."},
             {"role": "user", "content": prompt}
         ]
+    else:
+        messages = [
+            {"role": "system", "content": "You are a helpful assistant robot."},
+            {"role": "user", "content": prompt}
+        ]
+
+    for message in messages:
+        print(f"{message['role']}: {message['content']}")
+
+    # Use the chat interface
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        temperature=0.6,  # Adjusts the randomness of the output
+        top_p=0.9,  # Adjusts the nucleus sampling
+        messages=messages
     )
 
     # Extract the model's response
@@ -47,7 +52,15 @@ def get_gpt_context(object_name, desired_contexts=[], task=None):
     return answer  # Return the raw answer if no context is found
 
 # Test
-object_name = "mobile_phone"
-desired_contexts = ['kitchen', 'dining_room']
-context = get_gpt_context(object_name, desired_contexts)
+object_name = "potato"
+
+
+desired_contexts = [
+    "kitchen", "garden"
+    ]
+tasks= [
+    "gardening"
+    ]
+
+context = get_gpt_context(object_name, desired_contexts = desired_contexts,tasks=tasks )
 print(f"The most relevant context for {object_name} is {context}.")

@@ -1,6 +1,23 @@
 import json
 
-def get_object_context(data, object_name, desired_contexts=None):
+
+# New function to set robot focus
+def set_robot_focus(path_info, focus_contexts, degree_reduction=1, weight_multiplier=1.5):
+    path, average_weight, degree_of_separation = path_info
+    for edge in path:
+        if edge[0] in focus_contexts:
+            print(f"Adjusting for focus context: {edge[0]}") 
+
+            # degree_of_separation = max(1, degree_of_separation - degree_reduction)  # Ensure it doesn't go below 1
+
+            degree_of_separation -= degree_reduction
+            average_weight *= weight_multiplier
+            break
+    return (path, average_weight, degree_of_separation)
+
+
+
+def get_object_context(data, object_name, desired_contexts=None, focus_contexts=[]):
     """
     Given the data, an object name, and an optional list of desired contexts,
     return its most relevant context along with the path, weight, and degree of separation.
@@ -33,21 +50,27 @@ def get_object_context(data, object_name, desired_contexts=None):
     # relevant_paths = [path for path in relevant_paths if not any(edge[1] == 'RelatedTo' and edge[2] < 2 for edge in path[0])]
 
 
-    # Calculate the average weight for each path
-    for i, (path, _) in enumerate(relevant_paths):  # Ignore the provided path weight
+    # Calculate the average weight for each path based on the robot's focus
+    for i, (path, _) in enumerate(relevant_paths):
+        # Calculate the average weight for the path
         total_weight = sum(edge[2] for edge in path)
         average_weight = total_weight / len(path)
-        relevant_paths[i] = (path, average_weight)
+        
+        # Adjust the path based on the robot's focus
+        degree_of_separation = len(path)
+        adjusted_path_info = set_robot_focus((path, average_weight, degree_of_separation), focus_contexts)
+        
+        relevant_paths[i] = adjusted_path_info
 
 
     # Sort the paths by degree of separation and then by weight
-    sorted_paths = sorted(relevant_paths, key=lambda x: (len(x[0]), -x[1]))
+    sorted_paths = sorted(relevant_paths, key=lambda x: (x[2], -x[1]))
+
 
     # The most relevant location and details will be from the first path in the sorted list
     if sorted_paths:
-        most_relevant_path, weight = sorted_paths[0]
+        most_relevant_path, weight, degree_of_separation = sorted_paths[0]
         context = most_relevant_path[0][0]
-        degree_of_separation = len(most_relevant_path)
         
         # Create a readable path for display
         path_elements = []
@@ -69,9 +92,22 @@ with open('paths_modified_4.json', 'r') as file:
 
 
 # Test
-object_name = "high_heels"
-desired_contexts = ["office", "living_room", "bedroom"]  # Specify desired contexts here
-context, path, weight, degree_of_separation = get_object_context(data, object_name)
+object_name = "cake"
+
+
+# Specify desired contexts here
+desired_contexts = [
+    "kitchen", "pantry"
+    ]  
+
+
+ # Set the robot's focus here
+robot_focus = [
+    # "pantry"
+    ] 
+
+
+context, path, weight, degree_of_separation = get_object_context(data, object_name, desired_contexts, robot_focus)
 print(f"The most relevant context for {object_name} is {context}.")
 if context and not context.startswith("No paths found"):
     print(f"Path: {path}")
