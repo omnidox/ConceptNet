@@ -1,4 +1,5 @@
 import json
+import time
 
 
 # New function to set robot focus
@@ -6,7 +7,7 @@ def set_robot_focus(path_info, focus_contexts, degree_reduction=1, weight_multip
     path, average_weight, degree_of_separation = path_info
     for edge in path:
         if edge[0] in focus_contexts:
-            print(f"Adjusting for focus context: {edge[0]}") 
+            # print(f"Adjusting for focus context: {edge[0]}") 
 
             # degree_of_separation = max(1, degree_of_separation - degree_reduction)  # Ensure it doesn't go below 1
 
@@ -18,6 +19,9 @@ def set_robot_focus(path_info, focus_contexts, degree_reduction=1, weight_multip
 
 
 def get_object_context(data, object_name, desired_contexts=None, focus_contexts=[]):
+
+    # Start timing for the first implementation
+    start_time_1 = time.time()
     """
     Given the data, an object name, and an optional list of desired contexts,
     return its most relevant context along with the path, weight, and degree of separation.
@@ -55,12 +59,15 @@ def get_object_context(data, object_name, desired_contexts=None, focus_contexts=
         # Calculate the average weight for the path
         total_weight = sum(edge[2] for edge in path)
         average_weight = total_weight / len(path)
-        
-        # Adjust the path based on the robot's focus
         degree_of_separation = len(path)
-        adjusted_path_info = set_robot_focus((path, average_weight, degree_of_separation), focus_contexts)
+
+        # Adjust the average weight and degree of separation based on the robot's focus
+        if focus_contexts:
+            path_info = set_robot_focus((path, average_weight, degree_of_separation), focus_contexts)
+        else:
+            path_info = (path, average_weight, degree_of_separation)
         
-        relevant_paths[i] = adjusted_path_info
+        relevant_paths[i] = path_info
 
 
     # Sort the paths by degree of separation and then by weight
@@ -81,11 +88,27 @@ def get_object_context(data, object_name, desired_contexts=None, focus_contexts=
                 arrow = " -> "
             path_elements.append(f"{edge[0]} ({edge[1]}){arrow}")
         readable_path = ''.join(path_elements) + object_name
+
+           
+        # End timing for the first implementation
+        end_time_1 = time.time()
+
+        execution_time_1 = end_time_1 - start_time_1
+        print(f"Execution time for the robo-csk implementation: {execution_time_1:.4f} seconds")
+
         
         return context, readable_path, weight, degree_of_separation
     else:
-        return f"No paths found for {object_name}", None, None, None
 
+           
+        # End timing for the first implementation
+        end_time_1 = time.time()
+
+        execution_time_1 = end_time_1 - start_time_1
+        print(f"Execution time for the first implementation: {execution_time_1:.4f} seconds")
+
+        return f"No paths found for {object_name}", None, None, None
+ 
 # Load the data
 with open('paths_modified_4.json', 'r') as file:
     data = json.load(file)
@@ -101,10 +124,33 @@ desired_contexts = [
     ]  
 
 
- # Set the robot's focus here
-robot_focus = [
-    # "pantry"
-    ] 
+
+# Prompt the user for tasks
+available_contexts = ["kitchen", "office", "child's_bedroom", "living_room", "bedroom", 
+                     "dining_room", "pantry", "garden", "laundry_room"]
+
+prompt_message = ("Please input what contexts or multiple contexts separated by commas for the robot to focus on. "
+                 f"These are the possible contexts: {', '.join(available_contexts)} "
+                 "(or press Enter to continue without specifying tasks): ")
+
+while True:
+    user_input = input(prompt_message).strip()
+
+    # Split the input by commas and strip whitespace
+    robot_focus = [task.strip() for task in user_input.split(",")] if user_input else []
+
+    # Check if all tasks are in available_contexts
+    if all(task in available_contexts for task in robot_focus) or not robot_focus:
+
+        if robot_focus:
+            print(f"You have set the robot's focus on: {', '.join(robot_focus)}")
+        else:
+            print("There will be no focus.")
+        break
+    else:
+        print("One or more of the contexts you entered are not valid. Please try again.")
+
+
 
 
 context, path, weight, degree_of_separation = get_object_context(data, object_name, desired_contexts, robot_focus)
