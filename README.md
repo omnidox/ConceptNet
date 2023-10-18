@@ -19,6 +19,8 @@ The ConceptNet & ChatGPT Context Organizer repository by omnidox is designed to 
 - conceptnet_classifier_specified_2.py - Another specified version of the ConceptNet classifier.
 - conceptnet_classifier_specified_tasked.py - Tasked version of the specified ConceptNet classifier.
 - edge_checker.py - Script for checking edges in the knowledge graph.
+- objectgripper2_chatgpt.py - Chat GPT for robot decision making.
+- objectgripper2_robocsk.py - Commonsense knowledge for robot decision making.
 
 ### Documentation and Data: 
 - ConcepNet_Relationships.ods - Spreadsheet detailing relationships in ConceptNet.
