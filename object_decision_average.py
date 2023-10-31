@@ -49,7 +49,7 @@ def find_object_locations(data):
 
 
             # Prioritize the paths for each object by degree of separation and then by weight
-            object_locations[object_] = sorted(object_locations[object_], key=lambda x: (x[2], -x[1]))[:20]
+            object_locations[object_] = sorted(object_locations[object_], key=lambda x: (x[2], -x[1]))
 
     return object_locations
 
@@ -61,7 +61,7 @@ object_locations = find_object_locations(data)
 
 # Write the selected paths to a file
 
-filename = 'object_locations_avg2.txt'
+filename = 'object_locations_avg3.txt'
 
 with open(filename, 'w') as outfile:
     for object_, paths in object_locations.items():
