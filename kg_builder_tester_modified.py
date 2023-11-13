@@ -16,15 +16,19 @@ OBJECTS = ['apple', 'orange', 'peach', 'strawberry', 'grape', 'pear', 'lemon', '
 'platter', 'bowl', 'knife', 'spoon', 'saucer', 'chopsticks', 'drinking_straw', 'mug',
 'glove', 'belt', 'sock', 'tie', 'watch', 'computer_mouse', 'coin', 'calculator', 'box', 'boot', 'towel', 'shorts', 'swimwear',
 'shirt', 'clock', 'hat', 'scarf', 'roller_skates', 'skirt', 'mobile_phone',
-'plastic_bag', 'high_heels', 'handbag', 'clothing', 'oyster', 'tablet_computer', 'book', 'flower', 'candle', 'camera', 'remote_control']
+'plastic_bag', 'high_heels', 'handbag', 'clothing', 'oyster', 'tablet_computer', 'book', 'flower', 'candle', 'camera', 'remote_control',
+'mask', 'toy', 'face_mask', 'sunglasses', 'sun_glasses', 'spectacles', 'candy', 'pumpkin', 'spider', 'cat', 'bell', 'toothbrush',
+'tooth_brush', 'toothpaste', 'tooth_paste', 'top', 'receipt', 'dreidel', 'medicine', 'bow_tie', 'neck_tie', 'bowtie', 'necktie', 
+'eyeglasses_case', 'eyeglasses', 'aerosol', 'aerosol_can','dental_floss','cigar', 'stuffed_animal', 'stuffed_toy', 'stuffed_toy_animal',
+'chocolate', 'wand', 'block', 'chocolate_bar']
 
-LOCATIONS = ["kitchen", "office", "child's_bedroom", "living_room", "bedroom", "dining_room", "pantry", "garden", "laundry_room"]
+LOCATIONS = ["kitchen", "office", "playroom", "living_room", "bedroom", "dining_room", "pantry", "garden", "laundry_room", "bathroom"]
 
 API_ENDPOINT = "http://127.0.0.1:8084/query"
 
 start_time = time.time()  # Record the start time
 
-CACHE_FILE = 'node_data_cache2.json'
+CACHE_FILE = ''
 node_data_cache2 = {}
 
 def save_cache_to_file():
@@ -87,7 +91,7 @@ def bfs_modified_with_pathwise_visited(start, max_degree=3):
             if degree_counter > max_degree:
                 continue
 
-            rel_types = ["AtLocation", "UsedFor", "Synonym", "IsA"] if degree_counter == 0 else ["AtLocation", "UsedFor", "RelatedTo", "Synonym", "IsA"]
+            rel_types = ["AtLocation", "UsedFor", "Synonym", "IsA"] if degree_counter == 0 else ["AtLocation", "UsedFor", "RelatedTo", "IsA"]
 
             for rel_type in rel_types:
                 data = fetch_related_data(node, rel_type)
@@ -179,7 +183,7 @@ def main():
         if not success:
             break
 
-    output_file = "paths_modified_4.json"
+    output_file = "paths_modified_6.json"
     if os.path.exists(output_file):
         print(f"Warning: {output_file} already exists. Data will be overwritten.")
 
