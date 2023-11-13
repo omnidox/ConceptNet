@@ -23,7 +23,7 @@ unprompted = True
 
 
 # New function to set robot focus
-def set_robot_focus(path_info, focus_contexts, degree_reduction=0, weight_multiplier=1.5):
+def set_robot_focus(path_info, focus_contexts, degree_reduction=1, weight_multiplier=1.5):
     path, average_weight, degree_of_separation = path_info
     for edge in path:
         if edge[0] in focus_contexts:
@@ -47,9 +47,11 @@ def get_object_context(data, object_name, desired_contexts=None, focus_contexts=
     return its most relevant context along with the path, weight, and degree of separation.
     """
     # If no specific contexts are provided, consider all available contexts
-    if desired_contexts is None:
-        desired_contexts = ["kitchen", "office", "child's_bedroom", "living_room", "bedroom", 
-                            "dining_room", "pantry", "garden", "laundry_room"]
+    if not desired_contexts:
+        desired_contexts = ["kitchen", "office", "playroom", "living_room", "bedroom", 
+                        "dining_room", "pantry", "garden", "laundry_room","bathroom"]
+
+
     
     # If the object isn't present in the data, return a message indicating that
     if object_name not in [key.split(':')[1] for key in data]:
@@ -91,7 +93,7 @@ def get_object_context(data, object_name, desired_contexts=None, focus_contexts=
 
 
     # Sort the paths by average weight
-    sorted_paths = sorted(relevant_paths, key=lambda x: -x[1])[:20]
+    sorted_paths = sorted(relevant_paths, key=lambda x: (x[2], -x[1]))
 
 
     # The most relevant location and details will be from the first path in the sorted list
@@ -401,7 +403,7 @@ if __name__ == "__main__":
 
 
             # Load the data
-            with open('paths_modified_4.json', 'r') as file:
+            with open('paths_modified_6.json', 'r') as file:
                 data = json.load(file)
 
             contexts_csv = '/home/parronj1/Rafael/local_detectron/contexts.csv'
@@ -410,8 +412,8 @@ if __name__ == "__main__":
             desired_contexts.extend(df["Context"])
 
             # Prompt the user for tasks
-            available_contexts = ["kitchen", "office", "child's_bedroom", "living_room", "bedroom", 
-                                "dining_room", "pantry", "garden", "laundry_room"]
+            available_contexts =  ["kitchen", "office", "playroom", "living_room", "bedroom", 
+                        "dining_room", "pantry", "garden", "laundry_room","bathroom"]
 
             prompt_message = ("Please input what contexts or multiple contexts separated by commas for the robot to focus on. "
                             f"These are the possible contexts: {', '.join(available_contexts)} "

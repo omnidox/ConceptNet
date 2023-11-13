@@ -1,19 +1,21 @@
 import json
 
 
-OBJECTS = [
-    'apple', 'orange', 'peach', 'strawberry', 'grape', 'pear', 'lemon', 'banana',
-    'bottle', 'beer', 'juice', 'wine', 'carrot', 'bell_pepper', 'cucumber', 'broccoli', 
-    'asparagus', 'zucchini', 'radish', 'artichoke', 'mushroom', 'potato', 'pretzel', 
-    'popcorn', 'muffin', 'cheese', 'cake', 'cookie', 'pastry', 'doughnut', 'pen', 
-    'adhesive_tape', 'pencil_case', 'stapler', 'scissors', 'ruler', 'ball', 'balloon', 
-    'dice', 'flying_disc', 'teddy_bear', 'platter', 'bowl', 'knife', 'spoon', 'saucer', 
-    'chopsticks', 'drinking_straw', 'mug', 'glove', 'belt', 'sock', 'tie', 'watch', 
-    'computer_mouse', 'coin', 'calculator', 'box', 'boot', 'towel', 'shorts', 'swimwear',
-    'shirt', 'clock', 'hat', 'scarf', 'roller_skates', 'skirt', 'mobile_phone',
-    'plastic_bag', 'high_heels', 'handbag', 'clothing', 'oyster', 'tablet_computer', 
-    'book', 'flower', 'candle', 'camera', 'remote_control'
-]
+OBJECTS = ['apple', 'orange', 'peach', 'strawberry', 'grape', 'pear', 'lemon', 'banana',
+'bottle', 'beer', 'juice', 'wine',
+'carrot', 'bell_pepper', 'cucumber', 'broccoli', 'asparagus', 'zucchini', 'radish', 'artichoke', 'mushroom', 'potato',
+'pretzel', 'popcorn', 'muffin', 'cheese', 'cake', 'cookie', 'pastry', 'doughnut',
+'pen', 'adhesive_tape', 'pencil_case', 'stapler', 'scissors', 'ruler',
+'ball', 'balloon', 'dice', 'flying_disc', 'teddy_bear',
+'platter', 'bowl', 'knife', 'spoon', 'saucer', 'chopsticks', 'drinking_straw', 'mug',
+'glove', 'belt', 'sock', 'tie', 'watch', 'computer_mouse', 'coin', 'calculator', 'box', 'boot', 'towel', 'shorts', 'swimwear',
+'shirt', 'clock', 'hat', 'scarf', 'roller_skates', 'skirt', 'mobile_phone',
+'plastic_bag', 'high_heels', 'handbag', 'clothing', 'oyster', 'tablet_computer', 'book', 'flower', 'candle', 'camera', 'remote_control',
+'mask', 'toy', 'face_mask', 'sunglasses', 'sun_glasses', 'spectacles', 'candy', 'pumpkin', 'spider', 'cat', 'bell', 'toothbrush',
+'tooth_brush', 'toothpaste', 'tooth_paste', 'top', 'receipt', 'dreidel', 'medicine', 'bow_tie', 'neck_tie', 'bowtie', 'necktie', 
+'eyeglasses_case', 'eyeglasses', 'aerosol', 'aerosol_can','dental_floss','cigar', 'stuffed_animal', 'stuffed_toy', 'stuffed_toy_animal',
+'chocolate', 'wand', 'block', 'chocolate_bar']
+
 
 # New function to set robot focus
 def set_robot_focus(path_info, focus_contexts, degree_reduction=1, weight_multiplier=1.5):
@@ -68,16 +70,16 @@ def find_object_locations(data, focus_contexts=[]):
     return object_locations
 
 # Load the data
-with open('paths_modified_4.json', 'r') as file:
+with open('paths_modified_6.json', 'r') as file:
     data = json.load(file)
 
 # Set the robot's focus
-robot_focus = ["pantry"]
+robot_focus = []
 object_locations = find_object_locations(data, focus_contexts=robot_focus)
 
 # Write the selected paths to a file
 
-filename = 'object_locations_tasked.txt'
+filename = 'object_locations_tasked2.txt'
 
 with open(filename, 'w') as outfile:
     for object_, paths in object_locations.items():
