@@ -28,8 +28,9 @@ def get_object_context(data, object_name, desired_contexts=None, focus_contexts=
     """
     # If no specific contexts are provided, consider all available contexts
     if not desired_contexts:
-        desired_contexts = ["kitchen", "office", "child's_bedroom", "living_room", "bedroom", 
-                        "dining_room", "pantry", "garden", "laundry_room","bathroom"]
+        desired_contexts = [
+    "kitchen", "office", "playroom", "living_room", "bedroom", "dining_room", "pantry", "garden", "laundry_room", "bathroom"
+    ]  
 
 
 
@@ -82,7 +83,7 @@ def get_object_context(data, object_name, desired_contexts=None, focus_contexts=
     return sorted_paths
  
 # Load the data
-with open('paths_modified_5.json', 'r') as file:
+with open('paths_modified_6.json', 'r') as file:
     data = json.load(file)
 
 
@@ -92,14 +93,15 @@ object_name = "toy"
 
 # Specify desired contexts here
 desired_contexts = [
-    # "kitchen", "child's_bedroom", "office", "playroom", "living_room", "bedroom", "dining_room", "pantry", "garden", "laundry_room", "bathroom"
+    # "kitchen", "office", "playroom", "living_room", "bedroom", "dining_room", "pantry", "garden", "laundry_room", "bathroom"
     ]  
 
 
 
 # Prompt the user for tasks
-available_contexts = ["kitchen", "office", "child's_bedroom", "living_room", "bedroom", 
-                     "dining_room", "pantry", "garden", "laundry_room", "bathroom"]
+available_contexts = [
+    "kitchen", "child's_bedroom", "office", "playroom", "living_room", "bedroom", "dining_room", "pantry", "garden", "laundry_room", "bathroom"
+    ]  
 
 prompt_message = ("Please input what contexts or multiple contexts separated by commas for the robot to focus on. "
                  f"These are the possible contexts: {', '.join(available_contexts)} "

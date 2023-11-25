@@ -15,7 +15,7 @@ def get_gpt_context(object_name, desired_contexts=[], tasks=[]):
 
    # If no specific contexts are provided, consider all available contexts
     if not desired_contexts:
-        desired_contexts = ["kitchen", "office", "child's_bedroom", "living_room", "bedroom", 
+        desired_contexts = ["kitchen", "office", "playroom", "living_room", "bedroom", 
                             "dining_room", "pantry", "garden", "laundry_room"]
 
     # Refine the prompt to guide the model towards a shorter answer
