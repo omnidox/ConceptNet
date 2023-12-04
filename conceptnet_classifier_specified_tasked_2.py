@@ -116,52 +116,20 @@ def get_object_context(data, object_name, desired_contexts=None, focus_contexts=
  
 
 
-def get_conceptnet_context(object_name):
+def get_conceptnet_context(object_name, desired_contexts=None, focus_contexts=None):
     # Load the data
     with open('paths_modified_6.json', 'r') as file:
         data = json.load(file)
 
+    # If desired_contexts or focus_contexts are not provided, set default values
+    if desired_contexts is None:
+        desired_contexts = ["kitchen", "office", "playroom", "living_room", "bedroom", 
+                            "dining_room", "pantry", "garden", "laundry_room", "bathroom"]
 
-    # Test
-    # object_name = "toy"
+    if focus_contexts is None:
+        focus_contexts = []
 
-
-    # Specify desired contexts here
-    desired_contexts = [
-        # "kitchen", "playroom", "office", "playroom", "living_room", "bedroom", "dining_room", "pantry", "garden", "laundry_room", "bathroom"
-        ]  
-
-
-
-    # Prompt the user for tasks
-    available_contexts = ["kitchen", "office", "playroom", "living_room", "bedroom", 
-                        "dining_room", "pantry", "garden", "laundry_room", "bathroom"]
-
-    prompt_message = ("Please input what contexts or multiple contexts separated by commas for the robot to focus on. "
-                    f"These are the possible contexts: {', '.join(available_contexts)} "
-                    "(or press Enter to continue without specifying tasks): ")
-
-    while True:
-        user_input = input(prompt_message).strip()
-
-        # Split the input by commas and strip whitespace
-        robot_focus = [task.strip() for task in user_input.split(",")] if user_input else []
-
-        # Check if all tasks are in available_contexts
-        if all(task in available_contexts for task in robot_focus) or not robot_focus:
-
-            if robot_focus:
-                print(f"You have set the robot's focus on: {', '.join(robot_focus)}")
-            else:
-                print("There will be no focus.")
-            break
-        else:
-            print("One or more of the contexts you entered are not valid. Please try again.")
-
-
-
-
-    context, path, weight, degree_of_separation = get_object_context(data, object_name, desired_contexts, robot_focus)
+    context, path, weight, degree_of_separation = get_object_context(data, object_name, desired_contexts, focus_contexts)
     print(f"The most relevant context for {object_name} is {context}.")
     if context and not context.startswith("No paths found"):
         print(f"Path: {path}")
@@ -169,6 +137,13 @@ def get_conceptnet_context(object_name):
         print(f"Degree of Separation: {degree_of_separation}")
     else:
         print("No relevant paths found.")
+
+
+    # Return both context and path
+    if context and not context.startswith("No paths found"):
+        return context, path
+    else:
+        return "NoPaths", None
 
 
 # get_conceptnet_context("apple")

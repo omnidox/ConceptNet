@@ -69,39 +69,44 @@ def get_gpt_context(object_name, desired_contexts=[], tasks=[]):
     return answer  # Return the raw answer if no context is found
 
 # Test
-object_name = "potato"
+
+def get_chat_gpt_context(object_name):
+    # object_name = "potato"
 
 
-desired_contexts = [
-    "kitchen", "garden"
-    ]
+    desired_contexts = [
+        # "kitchen", "garden"
+        ]
 
 
-# Prompt the user for tasks
-available_contexts = ["kitchen", "office", "child's_bedroom", "living_room", "bedroom", 
-                     "dining_room", "pantry", "garden", "laundry_room"]
+    # Prompt the user for tasks
+    available_contexts = ["kitchen", "office", "child's_bedroom", "living_room", "bedroom", 
+                        "dining_room", "pantry", "garden", "laundry_room"]
 
-prompt_message = ("Please input what contexts or multiple contexts separated by commas for the robot to focus on. "
-                 f"These are the possible contexts: {', '.join(available_contexts)} "
-                 "(or press Enter to continue without specifying tasks): ")
+    prompt_message = ("Please input what contexts or multiple contexts separated by commas for the robot to focus on. "
+                    f"These are the possible contexts: {', '.join(available_contexts)} "
+                    "(or press Enter to continue without specifying tasks): ")
 
-while True:
-    user_input = input(prompt_message).strip()
+    while True:
+        user_input = input(prompt_message).strip()
 
-    # Split the input by commas and strip whitespace
-    tasks = [task.strip() for task in user_input.split(",")] if user_input else []
+        # Split the input by commas and strip whitespace
+        tasks = [task.strip() for task in user_input.split(",")] if user_input else []
 
-    # Check if all tasks are in available_contexts
-    if all(task in available_contexts for task in tasks) or not tasks:
-        if tasks:
-            print(f"You have set the robot's focus on: {', '.join(tasks)}")
+        # Check if all tasks are in available_contexts
+        if all(task in available_contexts for task in tasks) or not tasks:
+            if tasks:
+                print(f"You have set the robot's focus on: {', '.join(tasks)}")
+            else:
+                print("There will be no focus.")
+            break
+
         else:
-            print("There will be no focus.")
-        break
-
-    else:
-        print("One or more of the contexts you entered are not valid. Please try again.")
+            print("One or more of the contexts you entered are not valid. Please try again.")
 
 
-context = get_gpt_context(object_name, desired_contexts = desired_contexts,tasks=tasks )
-print(f"The most relevant context for {object_name} is {context}.")
+    context = get_gpt_context(object_name, desired_contexts = desired_contexts,tasks=tasks )
+    print(f"The most relevant context for {object_name} is {context}.")
+
+
+# get_chat_gpt_context("apple")
