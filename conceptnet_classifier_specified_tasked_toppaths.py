@@ -88,7 +88,7 @@ with open('paths_modified_6.json', 'r') as file:
 
 
 # Test
-object_name = "toy"
+object_name = "apple"
 
 
 # Specify desired contexts here

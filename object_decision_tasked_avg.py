@@ -15,7 +15,7 @@ OBJECTS = ['apple', 'orange', 'peach', 'strawberry', 'grape', 'pear', 'lemon', '
 'tooth_brush', 'toothpaste', 'tooth_paste', 'top', 'receipt', 'dreidel', 'medicine', 'bow_tie', 'neck_tie', 'bowtie', 'necktie', 
 'eyeglasses_case', 'eyeglasses', 'aerosol', 'aerosol_can','dental_floss','cigar', 'stuffed_animal', 'stuffed_toy', 'stuffed_toy_animal']
 
-# New function to set robot focus
+# New function to set robot focus (No degree reduction)
 def set_robot_focus(path_info, focus_contexts, degree_reduction=0, weight_multiplier=1.5):
     path, average_weight, degree_of_separation = path_info
     for edge in path:
@@ -66,7 +66,15 @@ def find_object_locations(data, focus_contexts=[]):
             # object_locations[object_] = sorted(object_locations[object_], key=lambda x: (x[2], -x[1]))[:20]
 
             # Prioritize the paths for each object solely by average weight
+                
+            """
+            Paths for each object are prioritized solely by average weight in descending order (lambda x: -x[1]), 
+            disregarding the degree of separation. This change means that the only criterion for path priority is how "heavy" or significant 
+            the path is, based on the average weight of its edges.
+            """
+
             object_locations[object_] = sorted(object_locations[object_], key=lambda x: -x[1])[:20]
+
 
 
     return object_locations

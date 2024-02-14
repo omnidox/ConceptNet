@@ -63,6 +63,13 @@ def find_object_locations(data, focus_contexts=[]):
                 adjusted_path_info = set_robot_focus((path, average_weight, degree_of_separation), focus_contexts)
                 object_locations[object_].append(adjusted_path_info)
 
+            """
+            Paths for each object are prioritized by degree of separation first (ascending order, 
+            meaning paths with fewer degrees of separation are preferred), and then by weight 
+            (descending order, meaning heavier paths are preferred after considering degree of separation). 
+            This is achieved with the sorting key lambda x: (x[2], -x[1]).
+            """
+
 
             # Prioritize the paths for each object by degree of separation and then by weight
             object_locations[object_] = sorted(object_locations[object_], key=lambda x: (x[2], -x[1]))[:20]

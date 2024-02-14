@@ -48,6 +48,10 @@ def find_object_locations(data):
                 object_locations[object_].append((path, average_weight, degree_of_separation))
 
 
+
+
+
+
             # Prioritize the paths for each object by degree of separation and then by weight
             object_locations[object_] = sorted(object_locations[object_], key=lambda x: (x[2], -x[1]))
 
