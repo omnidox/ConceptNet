@@ -10,3 +10,4 @@ cc.en.300.bin
 Papers and Thesis/
 /converted_papers
 convert_pdfs.py
+__pycache__/
