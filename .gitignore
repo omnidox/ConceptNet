@@ -1,13 +1,25 @@
+# Python environment
 concept_env/
+
+# Large data files
 conceptnet-assertions-5.7.0.csv/
 conceptnet-assertions-5.7.0.csv.gz/
 conceptnet-assertions-5.7.0.csv.gz
-conceptnet-assertions-5.7.0.csv.gz/
-node_data_cache2.json
-config.ini
 cc.en.300.bin.gz
 cc.en.300.bin
+
+# Cache and configuration files
+node_data_cache2.json
+config.ini
 Papers and Thesis/
-/converted_papers
+
+# Generated files and directories
+/converted_papers/
 convert_pdfs.py
 __pycache__/
+
+# IDE settings
+.vscode/
+
+# Documentation (optional, since these are in the repository)
+# Papers and Thesis/
