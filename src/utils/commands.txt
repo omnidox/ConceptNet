@@ -1,0 +1,4 @@
+source concept_env/bin/activate
+
+
+./run_commands.sh

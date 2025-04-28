@@ -1,6 +1,0 @@
-
-Locations for stapler:
-laundry_room (AtLocation | Weight: 2.00) <- iron (RelatedTo | Weight: 1.00) -> controller/n (RelatedTo | Weight: 1.00) -> device (IsA | Weight: 2.00) <- stapler | Total Weight: 2.00 | Degree of Separation: 4
-laundry_room (AtLocation | Weight: 2.00) <- iron (RelatedTo | Weight: 1.00) -> ferrometer/n (RelatedTo | Weight: 1.00) -> device (IsA | Weight: 2.00) <- stapler | Total Weight: 2.00 | Degree of Separation: 4
-laundry_room (AtLocation | Weight: 2.00) <- iron (RelatedTo | Weight: 1.00) -> hybrid/n (RelatedTo | Weight: 1.00) -> device (IsA | Weight: 2.00) <- stapler | Total Weight: 2.00 | Degree of Separation: 4
-laundry_room (AtLocation | Weight: 2.00) <- iron (RelatedTo | Weight: 1.00) -> cleat/n (RelatedTo | Weight: 1.00) -> device (IsA | Weight: 2.00) <- stapler | Total Weight: 2.00 | Degree of Separation: 4

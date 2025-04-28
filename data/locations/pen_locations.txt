@@ -1,0 +1,12 @@
+
+Locations for pen:
+office (AtLocation | Weight: 7.21) <- pen | Total Weight: 7.21 | Degree of Separation: 1
+kitchen (AtLocation | Weight: 5.29) <- table (AtLocation | Weight: 1.00) <- pen | Total Weight: 5.29 | Degree of Separation: 2
+dining_room (AtLocation | Weight: 4.00) <- table (AtLocation | Weight: 1.00) <- pen | Total Weight: 4.00 | Degree of Separation: 2
+office (AtLocation | Weight: 2.00) <- desk_drawer (AtLocation | Weight: 1.00) <- pen | Total Weight: 2.00 | Degree of Separation: 2
+kitchen (AtLocation | Weight: 1.00) <- drawer (AtLocation | Weight: 2.00) <- pen | Total Weight: 1.00 | Degree of Separation: 2
+bedroom (AtLocation | Weight: 1.00) <- table (AtLocation | Weight: 1.00) <- pen | Total Weight: 1.00 | Degree of Separation: 2
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 4.23) -> table (AtLocation | Weight: 1.00) <- pen | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 3.20) -> table (AtLocation | Weight: 1.00) <- pen | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 1.00) -> pew/n/wikt/en_1 (RelatedTo | Weight: 1.00) -> pen | Total Weight: 8.49 | Degree of Separation: 3
+office (AtLocation | Weight: 8.49) <- chair (RelatedTo | Weight: 1.00) -> tidy/n (RelatedTo | Weight: 1.00) -> pen | Total Weight: 8.49 | Degree of Separation: 3
