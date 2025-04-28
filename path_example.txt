@@ -1,5 +1,0 @@
-Locations for apple:
-pantry (AtLocation | Weight: 1.00) <- fruit (RelatedTo | Weight: 12.81) -> apple | Total Weight: 6.90 | Degree of Separation: 2
-kitchen (AtLocation | Weight: 7.21) <- food (RelatedTo | Weight: 2.32) -> apple | Total Weight: 4.76 | Degree of Separation: 2
-office (AtLocation | Weight: 4.90) <- computer (RelatedTo | Weight: 4.16) -> apple | Total Weight: 4.53 | Degree of Separation: 2
-bedroom (AtLocation | Weight: 1.00) <- house (AtLocation | Weight: 1.00) <- apple | Total Weight: 1.00 | Degree of Separation: 2
