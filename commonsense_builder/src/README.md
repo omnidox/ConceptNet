@@ -149,19 +149,41 @@ jupyter notebook analysis/similarity_score.ipynb
    - Document API changes
    - Maintain clear code comments
 
-## Contact
+## Contributing
+We welcome contributions to the Commonsense Knowledge Builder. Please read our Contributing Guidelines for details on our code of conduct and the process for submitting pull requests.
 
-For technical inquiries or collaboration opportunities:
-- Email: [Your Email]
-- GitHub: [Your GitHub Profile]
-- LinkedIn: [Your LinkedIn Profile]
+## Contact Information
+
+### Project Team
+
+#### Rafael Hidalgo
+- Email: rafaelhidalgo005@gmail.com, hidalgor@montclair.edu
+- LinkedIn: Rafael Omar Hidalgo
+- GitHub: omnidox
+
+#### Dr. Aparna S. Varde
+- Email: vardea@montclair.edu
+- Position: Associate Professor, School of Computing
+- Role: Associate Director, Clean Energy and Sustainability Analytics Center (CESAC)
+
+#### Jesse Parron
+- Email: parronj1@montclair.edu
+- Position: Research Associate, Collaborative Robotics and Smart Systems Laboratory
+- Role: Instructor, School of Computing
+
+#### Dr. Weitian Wang
+- Email: wangw@montclair.edu
+- Position: Associate Professor, School of Computing
+- Role: Founder Director, Collaborative Robotics and Smart Systems Laboratory (CRoSS Lab)
 
 ## License
-
-[Specify License Type]
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
 - ConceptNet team for the knowledge base
 - ROS community for robotic framework
-- Contributors and maintainers 
+- Contributors and maintainers
+- Montclair State University School of Computing
+- Clean Energy and Sustainability Analytics Center (CESAC)
+- Collaborative Robotics and Smart Systems Laboratory (CRoSS Lab) 
