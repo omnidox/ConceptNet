@@ -256,8 +256,26 @@ python Webcam_local_robo.py --config-file configs/Detic_LCOCOI21k_CLIP_SwinB_896
 ## Contact Information
 
 For questions, collaborations, or support, please contact:
-- Email: [Your Email]
+
+### Rafael Hidalgo
+- Email: rafaelhidalgo005@gmail.com, hidalgor@montclair.edu
+- LinkedIn: [Rafael Omar Hidalgo](https://www.linkedin.com/in/rafael-omar-hidalgo/)
 - GitHub: [omnidox](https://github.com/omnidox)
+
+### Dr. Aparna S. Varde
+- Email: vardea@montclair.edu
+- Position: Associate Professor, School of Computing
+- Role: Associate Director, Clean Energy and Sustainability Analytics Center (CESAC)
+
+### Jesse Parron
+- Email: parronj1@montclair.edu
+- Position: Research Associate, Collaborative Robotics and Smart Systems Laboratory
+- Role: Instructor, School of Computing
+
+### Dr. Weitian Wang
+- Email: wangw@montclair.edu
+- Position: Associate Professor, School of Computing
+- Role: Founder Director, Collaborative Robotics and Smart Systems Laboratory (CRoSS Lab)
 
 ## License
 
