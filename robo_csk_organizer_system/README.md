@@ -28,9 +28,9 @@ The Robo-CSK Organizer System is an advanced robotic system that combines common
 ## System Architecture
 
 ### Core Components
+- `Webcam_local_robo.py`: Real-time object detection and robotic control
 - `objectgripper2_robocsk_avg2.py`: Main robotic control implementation
 - `objectgripper2_chatgpt.py`: Alternative implementation with ChatGPT integration
-- `Webcam_local_robo.py`: Real-time object detection and tracking
 - `demo6.py`: Demonstration and testing interface
 
 ### Configuration Files
@@ -60,22 +60,28 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Object Detection (DETIC)
+### Webcam Local Robotic Control
 
-1. GPU Implementation:
-```bash
-python demo2.py --config-file configs/Detic_LCOCOI21k_CLIP_SwinB_896b32_4x_ft4x_max-size.yaml --webcam 0 --vocabulary lvis --opts MODEL.WEIGHTS models/Detic_LCOCOI21k_CLIP_SwinB_896b32_4x_ft4x_max-size.pth
-```
+The system supports real-time object detection and robotic control through the webcam. Here are the available configurations:
 
-2. CPU Implementation:
-```bash
-python demo2.py --config-file configs/Detic_LCOCOI21k_CLIP_SwinB_896b32_4x_ft4x_max-size.yaml --webcam 0 --vocabulary lvis --cpu --opts MODEL.WEIGHTS models/Detic_LCOCOI21k_CLIP_SwinB_896b32_4x_ft4x_max-size.pth
-```
-
-3. Custom Vocabulary (CPU):
+1. Basic Object Set (CPU):
 ```bash
 python3 Webcam_local_robo.py --config-file configs/Detic_LCOCOI21k_CLIP_SwinB_896b32_4x_ft4x_max-size.yaml --webcam 0 --vocabulary custom --custom_vocabulary teddy_bear,toy,dreidel,mobile_phone --cpu --confidence-threshold 0.3 --opts MODEL.WEIGHTS models/Detic_LCOCOI21k_CLIP_SwinB_896b32_4x_ft4x_max-size.pth
 ```
+
+2. Toy and Stuffed Animal Set (CPU):
+```bash
+python3 Webcam_local_robo.py --config-file configs/Detic_LCOCOI21k_CLIP_SwinB_896b32_4x_ft4x_max-size.yaml --webcam 0 --vocabulary custom --custom_vocabulary toy,stuffed_animal,stuffed_toy,ball --cpu --confidence-threshold 0.3 --opts MODEL.WEIGHTS models/Detic_LCOCOI21k_CLIP_SwinB_896b32_4x_ft4x_max-size.pth
+```
+
+### Command Parameters
+- `--config-file`: Path to DETIC configuration file
+- `--webcam`: Webcam device index (usually 0 for built-in camera)
+- `--vocabulary`: Set to 'custom' for custom object detection
+- `--custom_vocabulary`: Comma-separated list of objects to detect
+- `--cpu`: Force CPU usage (remove for GPU acceleration)
+- `--confidence-threshold`: Minimum confidence score for detection (0.0 to 1.0)
+- `--opts MODEL.WEIGHTS`: Path to the pre-trained model weights
 
 ## Performance Metrics
 
